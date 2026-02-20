@@ -1,463 +1,994 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camp Experts Italia — Consulenza Camp Estivi e Programmi per Ragazzi | Laura Toledo</title>
-  <meta name="description" content="Trova il camp estivo perfetto per tuo figlio con Laura Toledo, esperta Camp Experts per Italia e Monaco. 1.000+ programmi verificati. Consulenza personalizzata in italiano.">
-  <meta name="robots" content="index, follow">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.campexpertsitalia.com/">
-  <meta property="og:title" content="Camp Experts Italia — Consulenza Camp Estivi e Programmi per Ragazzi | Laura Toledo">
-  <meta property="og:description" content="Trova il camp estivo perfetto per tuo figlio con Laura Toledo, esperta Camp Experts per Italia e Monaco. 1.000+ programmi verificati.">
-  <meta property="og:image" content="https://www.campexpertsitalia.com/assets/images/og-image.jpg">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:site_name" content="Camp Experts Italia">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Camp Experts Italia — Consulenza Camp Estivi e Programmi per Ragazzi | Laura Toledo">
-  <meta name="twitter:description" content="Trova il camp estivo perfetto per tuo figlio con Laura Toledo, esperta Camp Experts per Italia e Monaco.">
-  <link rel="canonical" href="https://www.campexpertsitalia.com/">
-  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&subset=latin,latin-ext&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="/tailwind.config.js"></script>
-  <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Experts Italia — Consulenza Camp Estivi e Programmi per Ragazzi | Laura Toledo</title>
+    <meta name="description" content="Consulenza gratuita e personalizzata su camp estivi, programmi educativi, corsi d'inglese e programmi sportivi per ragazzi dai 6 ai 18 anni. Con Laura Toledo, esperta Camp Experts per Italia e Monaco.">
+    <meta name="robots" content="index, follow">
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Camp Experts Italia",
-    "url": "https://www.campexpertsitalia.com",
-    "description": "Consulenza personalizzata per camp estivi e programmi educativi internazionali per famiglie italiane.",
-    "areaServed": ["IT", "MC"],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+33618455997",
-      "contactType": "customer service",
-      "availableLanguage": ["Italian", "English"]
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.campexpertsitalia.com/">
+    <meta property="og:title" content="Camp Experts Italia — Consulenza Camp Estivi e Programmi per Ragazzi | Laura Toledo">
+    <meta property="og:description" content="Consulenza gratuita e personalizzata su camp estivi, programmi educativi, corsi d'inglese e programmi sportivi per ragazzi dai 6 ai 18 anni. Con Laura Toledo, esperta Camp Experts per Italia e Monaco.">
+    <meta property="og:image" content="https://www.campexpertsitalia.com/assets/images/og-image.jpg">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Camp Experts Italia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Camp Experts Italia — Consulenza Camp Estivi e Programmi per Ragazzi | Laura Toledo">
+    <meta name="twitter:description" content="Consulenza gratuita e personalizzata su camp estivi, programmi educativi, corsi d'inglese e programmi sportivi per ragazzi dai 6 ai 18 anni.">
+    <link rel="canonical" href="https://www.campexpertsitalia.com/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&subset=latin,latin-ext&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        azure: {
+                            50: '#EBF2F8', 100: '#D6E4F0', 200: '#ADC9E1', 300: '#85AED2',
+                            400: '#5C93C3', 500: '#3378B4', 600: '#1B4F72', 700: '#163F5B',
+                            800: '#102F44', 900: '#0B1F2D', 950: '#051017', DEFAULT: '#1B4F72',
+                        },
+                        terracotta: {
+                            50: '#FDEEEC', 100: '#FADDD9', 200: '#F5BBB3', 300: '#F0998D',
+                            400: '#EB7767', 500: '#E65541', 600: '#C0392B', 700: '#9A2E23',
+                            800: '#73221A', 900: '#4D1711', 950: '#260B09', DEFAULT: '#C0392B',
+                        },
+                        sand: {
+                            50: '#FEFCF8', 100: '#FDF8F0', 200: '#FAF0E0', 300: '#F5E6CC',
+                            400: '#EDCFA6', 500: '#E5B880', 600: '#DDA15A', 700: '#B5833F',
+                            800: '#876230', 900: '#5A4220', 950: '#2D2110', DEFAULT: '#F5E6CC',
+                        },
+                        charcoal: {
+                            50: '#ECF0F1', 100: '#D5DBDF', 200: '#ABB7BF', 300: '#82939F',
+                            400: '#586F7F', 500: '#2C3E50', 600: '#243240', 700: '#1B2530',
+                            800: '#121920', 900: '#090C10', 950: '#050608', DEFAULT: '#2C3E50',
+                        },
+                    },
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'Georgia', '"Times New Roman"', 'serif'],
+                        body: ['Inter', 'system-ui', '-apple-system', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'display': ['3.5rem', { lineHeight: '1.15', letterSpacing: '-0.02em', fontWeight: '700' }],
+                        'h1': ['2.5rem', { lineHeight: '1.2', letterSpacing: '-0.015em', fontWeight: '700' }],
+                        'h2': ['2rem', { lineHeight: '1.25', letterSpacing: '-0.01em', fontWeight: '600' }],
+                        'h3': ['1.5rem', { lineHeight: '1.3', letterSpacing: '-0.005em', fontWeight: '600' }],
+                        'h4': ['1.25rem', { lineHeight: '1.4', fontWeight: '600' }],
+                        'body-lg': ['1.125rem', { lineHeight: '1.75', fontWeight: '400' }],
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(27, 79, 114, 0.08), 0 2px 4px -2px rgba(27, 79, 114, 0.05)',
+                        'card-hover': '0 10px 25px -5px rgba(27, 79, 114, 0.12), 0 8px 10px -6px rgba(27, 79, 114, 0.06)',
+                        'nav': '0 2px 8px -1px rgba(44, 62, 80, 0.1)',
+                        'fab': '0 4px 14px rgba(37, 211, 102, 0.4)',
+                    },
+                    borderRadius: {
+                        'card': '0.75rem',
+                        'button': '0.5rem',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Camp Experts Italia",
+        "url": "https://www.campexpertsitalia.com",
+        "description": "Consulenza personalizzata per camp estivi e programmi educativi internazionali per famiglie italiane.",
+        "areaServed": ["IT", "MC"],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+33618455997",
+            "contactType": "customer service",
+            "availableLanguage": ["Italian", "English", "French"]
+        }
     }
-  }
-  </script>
+    </script>
+
+    <style>
+        /* ===== CSS Custom Properties ===== */
+        :root {
+            --color-azure: #1B4F72;
+            --color-azure-light: #3378B4;
+            --color-azure-dark: #163F5B;
+            --color-terracotta: #C0392B;
+            --color-terracotta-dark: #9A2E23;
+            --color-sand: #F5E6CC;
+            --color-sand-light: #FDF8F0;
+            --color-charcoal: #2C3E50;
+            --color-white: #FFFFFF;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', system-ui, sans-serif;
+            --transition-base: 200ms ease;
+            --transition-slow: 300ms ease;
+            --radius-card: 0.75rem;
+            --radius-button: 0.5rem;
+        }
+
+        /* ===== Global ===== */
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-charcoal);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+        }
+
+        /* Text balance for headlines */
+        .text-balance { text-wrap: balance; }
+
+        /* ===== Skip Link ===== */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 1rem;
+            z-index: 100;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--color-azure);
+            color: white;
+            border-radius: var(--radius-button);
+            font-weight: 600;
+            transition: top var(--transition-base);
+        }
+        .skip-link:focus { top: 1rem; }
+
+        /* ===== Nav Link Underline Animation ===== */
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            transition: color var(--transition-base);
+            padding: 0.5rem 0;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-terracotta);
+            transition: width var(--transition-base);
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after { width: 100%; }
+
+        /* ===== Mobile Nav Overlay ===== */
+        .mobile-nav-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 50;
+            background-color: rgba(44, 62, 80, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition-slow), visibility var(--transition-slow);
+        }
+        .mobile-nav-overlay.is-open {
+            opacity: 1;
+            visibility: visible;
+        }
+        .mobile-nav-panel {
+            position: fixed;
+            top: 0; right: 0; bottom: 0;
+            z-index: 51;
+            width: 85%;
+            max-width: 24rem;
+            background-color: white;
+            box-shadow: -4px 0 20px rgba(44, 62, 80, 0.15);
+            transform: translateX(100%);
+            transition: transform var(--transition-slow);
+            overflow-y: auto;
+        }
+        .mobile-nav-overlay.is-open .mobile-nav-panel {
+            transform: translateX(0);
+        }
+        .mobile-nav-link {
+            display: block;
+            padding: 1rem 1.5rem;
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--color-charcoal);
+            border-bottom: 1px solid #F3F4F6;
+            transition: background-color var(--transition-base), color var(--transition-base);
+        }
+        .mobile-nav-link:hover,
+        .mobile-nav-link.active {
+            background-color: var(--color-sand-light);
+            color: var(--color-azure);
+        }
+        body.nav-open { overflow: hidden; }
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.75rem;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: var(--radius-button);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            white-space: nowrap;
+        }
+        .btn:focus-visible {
+            outline: 2px solid var(--color-azure-light);
+            outline-offset: 2px;
+        }
+        .btn-primary {
+            background-color: var(--color-azure);
+            color: white;
+            border-color: var(--color-azure);
+        }
+        .btn-primary:hover {
+            background-color: var(--color-azure-dark);
+            border-color: var(--color-azure-dark);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(27, 79, 114, 0.25);
+        }
+        .btn-secondary {
+            background-color: var(--color-terracotta);
+            color: white;
+            border-color: var(--color-terracotta);
+        }
+        .btn-secondary:hover {
+            background-color: var(--color-terracotta-dark);
+            border-color: var(--color-terracotta-dark);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(192, 57, 43, 0.25);
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--color-azure);
+            border-color: var(--color-azure);
+        }
+        .btn-outline:hover {
+            background-color: var(--color-azure);
+            color: white;
+            transform: translateY(-1px);
+        }
+        .btn-sm { padding: 0.5rem 1.25rem; font-size: 0.875rem; }
+        .btn-lg { padding: 1rem 2.25rem; font-size: 1.125rem; }
+
+        /* ===== Cards ===== */
+        .card {
+            background-color: white;
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            transition: box-shadow var(--transition-base), transform var(--transition-base);
+        }
+        .card:hover {
+            box-shadow: 0 10px 25px -5px rgba(27, 79, 114, 0.12), 0 8px 10px -6px rgba(27, 79, 114, 0.06);
+            transform: translateY(-2px);
+        }
+        .card-bordered { border: 1px solid #E5E7EB; }
+
+        /* ===== Decorative Accent Line ===== */
+        .accent-line {
+            width: 3rem;
+            height: 3px;
+            background-color: var(--color-terracotta);
+            border-radius: 2px;
+        }
+        .accent-line-center { margin-left: auto; margin-right: auto; }
+
+        /* ===== CTA Banner ===== */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--color-azure) 0%, var(--color-azure-dark) 100%);
+            color: white;
+        }
+        .cta-banner h2 { color: white; }
+
+        /* ===== Footer ===== */
+        .site-footer {
+            background-color: var(--color-charcoal);
+            color: #D5DBDF;
+        }
+        .site-footer a {
+            color: #D5DBDF;
+            transition: color var(--transition-base);
+        }
+        .site-footer a:hover { color: white; }
+        .site-footer h4 { color: white; }
+
+        /* ===== WhatsApp FAB ===== */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 40;
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #25D366;
+            color: white;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+            transition: transform var(--transition-base), box-shadow var(--transition-base);
+            text-decoration: none;
+            animation: fab-pulse 2.5s ease-in-out 3;
+        }
+        .whatsapp-fab:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.55);
+            color: white;
+            animation: none;
+        }
+        .whatsapp-fab svg { width: 1.75rem; height: 1.75rem; fill: currentColor; }
+
+        @keyframes fab-pulse {
+            0%, 100% { box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 24px rgba(37, 211, 102, 0.65); }
+        }
+
+        /* ===== Scroll Reveal ===== */
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        .reveal-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .reveal-card.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== Reduced Motion ===== */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal-section, .reveal-card {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+
+        /* ===== Print ===== */
+        @media print {
+            .top-bar, .whatsapp-fab, .mobile-nav-overlay, .cta-banner { display: none !important; }
+            body { color: #000; background: #fff; }
+        }
+    </style>
 </head>
 <body class="font-body text-charcoal bg-white antialiased">
 
 <!-- Skip Link -->
 <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
 
-<!-- Top Bar -->
-<div class="top-bar">
-  <div class="container-site">
-    <div class="flex items-center justify-between py-2">
-      <a href="tel:+33618455997" class="flex items-center gap-1.5 text-sm" aria-label="Chiamaci">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-        <span class="hidden sm:inline">+33 6 18 45 59 97</span>
-        <span class="sm:hidden">Chiama</span>
-      </a>
-      <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-sm">
-        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span>WhatsApp</span>
-      </a>
+<!-- ================================================================
+     1. TOP BAR
+     ================================================================ -->
+<div class="top-bar bg-azure text-white text-sm">
+    <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-2">
+            <a href="tel:+33618455997" class="flex items-center gap-1.5 text-white hover:text-sand transition-colors" aria-label="Chiamaci">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                <span class="hidden sm:inline">+33 6 18 45 59 97</span>
+                <span class="sm:hidden">Chiama</span>
+            </a>
+            <div class="flex items-center gap-4">
+                <span class="hidden md:inline text-white/70">Consulenza gratuita in italiano</span>
+                <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-white hover:text-green-300 transition-colors">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
-<!-- Header -->
+<!-- ================================================================
+     2. HEADER / NAV
+     ================================================================ -->
 <header class="bg-white sticky top-0 z-40 shadow-nav">
-  <div class="container-site">
-    <div class="flex items-center justify-between h-16 md:h-20">
-      <a href="/" class="flex items-center gap-2 group">
-        <div class="w-10 h-10 md:w-12 md:h-12 bg-azure rounded-lg flex items-center justify-center flex-shrink-0"><span class="text-white font-heading font-bold text-lg md:text-xl">CE</span></div>
-        <div class="flex flex-col leading-tight">
-          <span class="font-heading font-bold text-azure text-lg md:text-xl tracking-tight group-hover:text-azure-700 transition-colors">Camp Experts</span>
-          <span class="text-terracotta text-xs md:text-sm font-semibold tracking-wider uppercase">Italia</span>
+    <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 md:w-12 md:h-12 bg-azure rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="text-white font-heading font-bold text-lg md:text-xl">CE</span>
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="font-heading font-bold text-azure text-lg md:text-xl tracking-tight group-hover:text-azure-700 transition-colors">Camp Experts</span>
+                    <span class="text-terracotta text-xs md:text-sm font-semibold tracking-wider uppercase">Italia</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="nav-link active text-azure">Home</a>
+                <a href="chi-sono.html" class="nav-link text-charcoal hover:text-azure">Chi &egrave; Laura</a>
+                <a href="servizi.html" class="nav-link text-charcoal hover:text-azure">Servizi</a>
+                <a href="programmi.html" class="nav-link text-charcoal hover:text-azure">Programmi</a>
+                <a href="faq.html" class="nav-link text-charcoal hover:text-azure">FAQ</a>
+                <a href="prenota.html" class="btn btn-primary btn-sm">Prenota</a>
+            </nav>
+
+            <!-- Hamburger -->
+            <button type="button"
+                    class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-charcoal hover:bg-sand-100 transition-colors"
+                    id="mobile-menu-btn"
+                    aria-expanded="false"
+                    aria-controls="mobile-nav"
+                    aria-label="Apri menu">
+                <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+                <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
         </div>
-      </a>
-      <nav class="hidden lg:flex items-center gap-8">
-        <a href="/" class="nav-link active">Home</a>
-        <a href="/chi-sono.html" class="nav-link">Chi &egrave; Laura</a>
-        <a href="/servizi.html" class="nav-link">Servizi</a>
-        <a href="/programmi.html" class="nav-link">Programmi</a>
-        <a href="/faq.html" class="nav-link">FAQ</a>
-        <a href="/prenota.html" class="btn btn-primary btn-sm">Prenota</a>
-      </nav>
-      <button type="button" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-charcoal hover:bg-sand-100 transition-colors" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Apri menu">
-        <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
-        <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
     </div>
-  </div>
 </header>
 
 <!-- Mobile Nav Overlay -->
 <div class="mobile-nav-overlay" id="mobile-nav" role="dialog" aria-modal="true">
-  <div class="absolute inset-0" id="mobile-nav-backdrop"></div>
-  <div class="mobile-nav-panel">
-    <div class="flex items-center justify-between p-4 border-b border-gray-100">
-      <span class="font-heading font-bold text-azure text-lg">Menu</span>
-      <button type="button" class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-sand-100" id="mobile-nav-close" aria-label="Chiudi menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
+    <div class="absolute inset-0" id="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+        <div class="flex items-center justify-between p-4 border-b border-gray-100">
+            <span class="font-heading font-bold text-azure text-lg">Menu</span>
+            <button type="button"
+                    class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-sand-100 transition-colors"
+                    id="mobile-nav-close"
+                    aria-label="Chiudi menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <nav>
+            <a href="index.html" class="mobile-nav-link active">Home</a>
+            <a href="chi-sono.html" class="mobile-nav-link">Chi &egrave; Laura</a>
+            <a href="servizi.html" class="mobile-nav-link">Servizi</a>
+            <a href="programmi.html" class="mobile-nav-link">Programmi</a>
+            <a href="faq.html" class="mobile-nav-link">FAQ</a>
+        </nav>
+        <div class="p-4 mt-4 space-y-3">
+            <a href="prenota.html" class="btn btn-primary w-full text-center">Prenota una Consulenza</a>
+            <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full text-center">WhatsApp</a>
+        </div>
     </div>
-    <nav>
-      <a href="/" class="mobile-nav-link active">Home</a>
-      <a href="/chi-sono.html" class="mobile-nav-link">Chi &egrave; Laura</a>
-      <a href="/servizi.html" class="mobile-nav-link">Servizi</a>
-      <a href="/programmi.html" class="mobile-nav-link">Programmi</a>
-      <a href="/faq.html" class="mobile-nav-link">FAQ</a>
-    </nav>
-    <div class="p-4 mt-4 space-y-3">
-      <a href="/prenota.html" class="btn btn-primary w-full">Prenota una Consulenza</a>
-      <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">WhatsApp</a>
-    </div>
-  </div>
 </div>
 
 <main id="main-content">
 
-  <!-- ==================== HERO ==================== -->
-  <section class="relative bg-azure-900 text-white overflow-hidden">
-    <!-- Hero background placeholder -->
-    <div class="absolute inset-0 bg-gradient-to-br from-azure-800 via-azure to-azure-700"></div>
-    <div class="absolute inset-0 bg-black/20"></div>
-    <!-- Decorative shapes -->
-    <div class="absolute top-0 right-0 w-96 h-96 bg-terracotta/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-    <div class="absolute bottom-0 left-0 w-64 h-64 bg-sand/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+    <!-- ================================================================
+         3. HERO SECTION
+         ================================================================ -->
+    <section class="relative overflow-hidden">
+        <!-- Hero background placeholder (1400x600) -->
+        <div class="absolute inset-0 bg-gradient-to-br from-azure-800 via-azure to-azure-700">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white/10 text-sm font-medium tracking-wide">Immagine Hero &mdash; 1400 &times; 600</span>
+            </div>
+        </div>
+        <!-- Dark overlay for text readability -->
+        <div class="absolute inset-0 bg-black/25"></div>
+        <!-- Decorative shapes -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-terracotta/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-sand/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
 
-    <div class="container-site relative z-10 py-20 md:py-28 lg:py-36">
-      <div class="max-w-3xl">
-        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6 text-balance">
-          Il programma estivo perfetto per tuo figlio &mdash; trovalo con Laura Toledo
-        </h1>
-        <p class="text-lg md:text-xl text-azure-100 mb-8 leading-relaxed max-w-2xl">
-          Esperta Camp Experts per Italia e Monaco. Organizzatrice del Monaco Expo. Consulenza gratuita e personalizzata su camp estivi, programmi educativi, corsi d&rsquo;inglese e programmi sportivi per ragazzi dai 6 ai 18 anni.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 mb-8">
-          <a href="/prenota.html" class="btn btn-lg bg-terracotta text-white hover:bg-terracotta-700 border-terracotta hover:border-terracotta-700">
-            Prenota la tua consulenza gratuita
-          </a>
-          <a href="/programmi.html" class="btn btn-lg border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/70">
-            Esplora i programmi
-          </a>
-        </div>
-        <p class="text-sm text-azure-200 flex flex-wrap gap-x-4 gap-y-1">
-          <span>Basata a Monaco</span>
-          <span class="hidden sm:inline">&middot;</span>
-          <span>1.000+ programmi verificati in tutto il mondo</span>
-          <span class="hidden sm:inline">&middot;</span>
-          <span>Consulenza gratuita in italiano</span>
-        </p>
-      </div>
-    </div>
-  </section>
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8 relative z-10 py-20 md:py-28 lg:py-36">
+            <div class="max-w-3xl">
+                <h1 class="font-heading text-4xl md:text-5xl lg:text-display text-white leading-tight mb-6 text-balance">
+                    Il programma estivo perfetto per tuo figlio &mdash; trovalo con Laura Toledo
+                </h1>
+                <p class="text-lg md:text-xl text-azure-100 mb-8 leading-relaxed max-w-2xl">
+                    Esperta Camp Experts per Italia e Monaco. Organizzatrice del Monaco Expo. Consulenza gratuita e personalizzata su camp estivi, programmi educativi, corsi d&rsquo;inglese e programmi sportivi per ragazzi dai 6 ai 18 anni.
+                </p>
 
-  <!-- ==================== TRUST BAR ==================== -->
-  <section class="bg-sand-100 py-6 border-y border-sand-300">
-    <div class="container-site">
-      <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center">
-            <svg class="w-5 h-5 text-azure" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
-          </div>
-          <span class="text-sm font-semibold text-charcoal">Camp Experts &mdash; 25+ anni di esperienza</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center">
-            <svg class="w-5 h-5 text-azure" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
-          </div>
-          <span class="text-sm font-semibold text-charcoal">International School of Monaco &mdash; Partner</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center">
-            <svg class="w-5 h-5 text-azure" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
-          </div>
-          <span class="text-sm font-semibold text-charcoal">Monaco Expo &mdash; Organizzatrice</span>
-        </div>
-      </div>
-    </div>
-  </section>
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="prenota.html"
+                       class="btn btn-lg bg-terracotta text-white hover:bg-terracotta-700 border-terracotta hover:border-terracotta-700 shadow-lg">
+                        Prenota la tua consulenza con Laura
+                    </a>
+                    <a href="programmi.html"
+                       class="btn btn-lg border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/70">
+                        Esplora i programmi
+                    </a>
+                </div>
 
-  <!-- ==================== PERCHÉ LAURA ==================== -->
-  <section class="section bg-white" id="perche-laura">
-    <div class="container-site">
-      <div class="text-center mb-12">
-        <div class="accent-line accent-line-center mb-4"></div>
-        <h2 class="font-heading text-h2 text-azure mb-4">Perch&eacute; Laura?</h2>
-        <p class="text-body-lg text-charcoal-400 max-w-2xl mx-auto">Tre motivi per cui le famiglie italiane si affidano a Laura per la scelta del programma estivo.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div class="card card-bordered p-8 text-center">
-          <div class="w-16 h-16 bg-azure/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-azure" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
-          </div>
-          <h3 class="font-heading text-h4 text-azure mb-3">Organizza expo di livello mondiale</h3>
-          <p class="text-charcoal-400 leading-relaxed">Laura organizza e coordina uno dei Camp Expo più importanti, con operatori e scuole da UK, Svizzera, USA, Francia e molti altri paesi &mdash; il che le d&agrave; una visione unica del mercato internazionale.</p>
+                <!-- Trust line -->
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-azure-200">
+                    <span class="flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-sand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                        Basata a Monaco
+                    </span>
+                    <span class="hidden sm:inline text-white/30">|</span>
+                    <span class="flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-sand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                        1.000+ programmi verificati in tutto il mondo
+                    </span>
+                    <span class="hidden sm:inline text-white/30">|</span>
+                    <span class="flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-sand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/></svg>
+                        Consulenza in italiano
+                    </span>
+                </div>
+            </div>
         </div>
-        <!-- Card 2 -->
-        <div class="card card-bordered p-8 text-center">
-          <div class="w-16 h-16 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
-          </div>
-          <h3 class="font-heading text-h4 text-azure mb-3">Conoscenza insuperabile dei programmi</h3>
-          <p class="text-charcoal-400 leading-relaxed">Educazione, lingue, sport: Laura conosce strutture, staff, programmi e risultati meglio di chiunque nel settore.</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="card card-bordered p-8 text-center">
-          <div class="w-16 h-16 bg-sand/50 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-azure" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
-          </div>
-          <h3 class="font-heading text-h4 text-azure mb-3">Radici italiane + network locale</h3>
-          <p class="text-charcoal-400 leading-relaxed">Nata in Italia e con forte rete in tutto il paese, Laura capisce le aspettative delle famiglie italiane e parla la lingua.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==================== COME FUNZIONA ==================== -->
-  <section class="section bg-sand-100" id="come-funziona">
-    <div class="container-site">
-      <div class="text-center mb-14">
-        <div class="accent-line accent-line-center mb-4"></div>
-        <h2 class="font-heading text-h2 text-azure mb-4">Come funziona</h2>
-        <p class="text-body-lg text-charcoal-400 max-w-2xl mx-auto">Cinque passi semplici per trovare il programma perfetto per tuo figlio.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4 relative">
-        <!-- Connecting line (desktop only) -->
-        <div class="hidden md:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-azure/20"></div>
-        <!-- Step 1 -->
-        <div class="text-center relative">
-          <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">1</div>
-          <h3 class="font-heading text-lg text-azure mb-2">Prenota una consulenza</h3>
-          <p class="text-sm text-charcoal-400">20&ndash;30 minuti &mdash; parliamo in italiano</p>
+    <!-- ================================================================
+         4. TRUST BAR
+         ================================================================ -->
+    <section class="bg-sand-100 py-6 border-y border-sand-300">
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-azure" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+                    </div>
+                    <span class="text-sm font-semibold text-charcoal">Camp Experts &mdash; 25+ anni di esperienza</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-azure" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
+                    </div>
+                    <span class="text-sm font-semibold text-charcoal">International School of Monaco &mdash; Partner</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-azure" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+                    </div>
+                    <span class="text-sm font-semibold text-charcoal">Monaco Expo &mdash; Organizzatrice</span>
+                </div>
+            </div>
         </div>
-        <!-- Step 2 -->
-        <div class="text-center relative">
-          <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">2</div>
-          <h3 class="font-heading text-lg text-azure mb-2">Profilo &amp; Priorit&agrave;</h3>
-          <p class="text-sm text-charcoal-400">Et&agrave;, interessi, obiettivi, budget</p>
-        </div>
-        <!-- Step 3 -->
-        <div class="text-center relative">
-          <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">3</div>
-          <h3 class="font-heading text-lg text-azure mb-2">Shortlist</h3>
-          <p class="text-sm text-charcoal-400">Laura seleziona 2&ndash;4 programmi perfetti</p>
-        </div>
-        <!-- Step 4 -->
-        <div class="text-center relative">
-          <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">4</div>
-          <h3 class="font-heading text-lg text-azure mb-2">Decisione &amp; booking</h3>
-          <p class="text-sm text-charcoal-400">Supporto completo nella prenotazione</p>
-        </div>
-        <!-- Step 5 -->
-        <div class="text-center relative">
-          <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">5</div>
-          <h3 class="font-heading text-lg text-azure mb-2">Follow-up</h3>
-          <p class="text-sm text-charcoal-400">Verifica dettagli e contatto fino alla partenza</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==================== CATEGORIE PROGRAMMI ==================== -->
-  <section class="section bg-white" id="categorie">
-    <div class="container-site">
-      <div class="text-center mb-12">
-        <div class="accent-line accent-line-center mb-4"></div>
-        <h2 class="font-heading text-h2 text-azure mb-4">Programmi in evidenza</h2>
-        <p class="text-body-lg text-charcoal-400 max-w-2xl mx-auto">Esplora le principali categorie di programmi per ragazzi dai 6 ai 18 anni.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Cat 1 -->
-        <a href="/programmi.html?tipo=camp-estivo" class="card card-bordered group overflow-hidden">
-          <div class="aspect-[4/3] bg-gradient-to-br from-azure-200 to-azure-400 flex items-center justify-center">
-            <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
-          </div>
-          <div class="p-5">
-            <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Camp estivi tradizionali</h3>
-            <p class="text-sm text-charcoal-400 mb-3">Esperienze residenziali classiche con attivit&agrave; all&rsquo;aperto, sport e socializzazione.</p>
-            <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
-          </div>
-        </a>
-        <!-- Cat 2 -->
-        <a href="/programmi.html?tipo=educativo" class="card card-bordered group overflow-hidden">
-          <div class="aspect-[4/3] bg-gradient-to-br from-sand-300 to-sand-500 flex items-center justify-center">
-            <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
-          </div>
-          <div class="p-5">
-            <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Programmi educativi e accademici</h3>
-            <p class="text-sm text-charcoal-400 mb-3">Study abroad, summer academic programmes e boarding school tasters.</p>
-            <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
-          </div>
-        </a>
-        <!-- Cat 3 -->
-        <a href="/programmi.html?tipo=inglese" class="card card-bordered group overflow-hidden">
-          <div class="aspect-[4/3] bg-gradient-to-br from-terracotta-200 to-terracotta-400 flex items-center justify-center">
-            <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364V3"/></svg>
-          </div>
-          <div class="p-5">
-            <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Corsi intensivi d&rsquo;inglese</h3>
-            <p class="text-sm text-charcoal-400 mb-3">Soggiorni linguistici mirati con qualit&agrave; didattica e immersione reale.</p>
-            <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
-          </div>
-        </a>
-        <!-- Cat 4 -->
-        <a href="/programmi.html?tipo=sportivo" class="card card-bordered group overflow-hidden">
-          <div class="aspect-[4/3] bg-gradient-to-br from-azure-400 to-azure-600 flex items-center justify-center">
-            <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0016.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.003 6.003 0 01-2.02 1.074M12 6.75a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
-          </div>
-          <div class="p-5">
-            <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Programmi sportivi d&rsquo;&eacute;lite</h3>
-            <p class="text-sm text-charcoal-400 mb-3">Training camps e campus con allenatori professionisti per giovani atleti.</p>
-            <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- ================================================================
+         5. PERCHE LAURA? — 3 CARDS
+         ================================================================ -->
+    <section class="py-12 md:py-20 bg-white" id="perche-laura">
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal-section">
+                <div class="accent-line accent-line-center mb-4" aria-hidden="true"></div>
+                <h2 class="font-heading text-h2 text-azure mb-4">Perch&eacute; Laura?</h2>
+                <p class="text-body-lg text-charcoal-400 max-w-2xl mx-auto">Tre motivi per cui le famiglie italiane si affidano a Laura per la scelta del programma estivo.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card card-bordered p-8 text-center reveal-card">
+                    <div class="w-16 h-16 bg-azure/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-azure" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+                    </div>
+                    <h3 class="font-heading text-h4 text-azure mb-3">Organizza expo di livello mondiale</h3>
+                    <p class="text-charcoal-400 leading-relaxed">Laura organizza e coordina uno dei Camp Expo pi&ugrave; importanti, con operatori e scuole da UK, Svizzera, USA, Francia e molti altri paesi &mdash; il che le d&agrave; una visione unica del mercato internazionale.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card card-bordered p-8 text-center reveal-card">
+                    <div class="w-16 h-16 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
+                    </div>
+                    <h3 class="font-heading text-h4 text-azure mb-3">Conoscenza insuperabile dei programmi</h3>
+                    <p class="text-charcoal-400 leading-relaxed">Educazione, lingue, sport: Laura conosce strutture, staff, programmi e risultati meglio di chiunque nel settore.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card card-bordered p-8 text-center reveal-card">
+                    <div class="w-16 h-16 bg-sand/50 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-azure" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
+                    </div>
+                    <h3 class="font-heading text-h4 text-azure mb-3">Radici italiane + network locale</h3>
+                    <p class="text-charcoal-400 leading-relaxed">Nata in Italia e con forte rete in tutto il paese, Laura capisce le aspettative delle famiglie italiane e parla la lingua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ==================== TESTIMONIALS ==================== -->
-  <section class="section bg-sand-100" id="testimonianze">
-    <div class="container-site">
-      <div class="text-center mb-12">
-        <div class="accent-line accent-line-center mb-4"></div>
-        <h2 class="font-heading text-h2 text-azure mb-4">Cosa dicono le famiglie</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="card card-bordered p-8">
-          <svg class="w-8 h-8 text-terracotta/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          <p class="text-charcoal mb-6 leading-relaxed italic">&ldquo;Grazie a Laura mio figlio ha passato l&rsquo;estate in un programma sportivo perfetto: allenamenti di qualit&agrave; e attenzione continua. Consigliatissima!&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center text-azure font-bold text-sm">MR</div>
-            <div><p class="font-semibold text-charcoal text-sm">Maria R.</p><p class="text-xs text-charcoal-400">Genova</p></div>
-          </div>
-        </div>
-        <div class="card card-bordered p-8">
-          <svg class="w-8 h-8 text-terracotta/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          <p class="text-charcoal mb-6 leading-relaxed italic">&ldquo;Laura ha trovato il corso d&rsquo;inglese intensivo ideale per nostra figlia: progressi visibili gi&agrave; dopo due settimane.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center text-azure font-bold text-sm">LP</div>
-            <div><p class="font-semibold text-charcoal text-sm">Luca P.</p><p class="text-xs text-charcoal-400">Roma</p></div>
-          </div>
-        </div>
-        <div class="card card-bordered p-8">
-          <svg class="w-8 h-8 text-terracotta/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          <p class="text-charcoal mb-6 leading-relaxed italic">&ldquo;Non avevamo idea da dove iniziare. Laura ci ha guidato passo dopo passo &mdash; professionale, disponibile, e soprattutto competente.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center text-azure font-bold text-sm">FM</div>
-            <div><p class="font-semibold text-charcoal text-sm">Francesca M.</p><p class="text-xs text-charcoal-400">Milano</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- ================================================================
+         6. COME FUNZIONA — 5 STEPS
+         ================================================================ -->
+    <section class="py-12 md:py-20 bg-sand-100" id="come-funziona">
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 reveal-section">
+                <div class="accent-line accent-line-center mb-4" aria-hidden="true"></div>
+                <h2 class="font-heading text-h2 text-azure mb-4">Come funziona</h2>
+                <p class="text-body-lg text-charcoal-400 max-w-2xl mx-auto">Cinque passi semplici per trovare il programma perfetto per tuo figlio.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4 relative">
+                <!-- Connecting line (desktop only) -->
+                <div class="hidden lg:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-azure/20" aria-hidden="true"></div>
 
-  <!-- ==================== BOTTOM CTA ==================== -->
-  <section class="cta-banner section">
-    <div class="container-site">
-      <div class="max-w-3xl mx-auto text-center">
-        <div class="accent-line accent-line-center mb-6" style="background-color: var(--color-sand);" aria-hidden="true"></div>
-        <h2 class="font-heading text-h2 md:text-display text-white mb-4 text-balance">Pronta/o a trovare il programma giusto?</h2>
-        <p class="text-body-lg text-azure-200 mb-8 max-w-xl mx-auto">La consulenza &egrave; gratuita per le famiglie &mdash; il nostro servizio &egrave; supportato dai partner internazionali.</p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/prenota.html" class="btn btn-lg bg-white text-azure hover:bg-sand-100 hover:text-azure-700 border-white font-semibold shadow-lg">Prenota la Consulenza Gratuita</a>
-          <a href="mailto:laura.toledo@libello.com?subject=Richiesta%20informazioni" class="btn btn-lg border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/60">Scrivici un&rsquo;Email</a>
+                <!-- Step 1 -->
+                <div class="text-center relative reveal-card">
+                    <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">1</div>
+                    <h3 class="font-heading text-lg text-azure mb-2">Prenota una consulenza</h3>
+                    <p class="text-sm text-charcoal-400">20&ndash;30 minuti &mdash; parliamo in italiano</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="text-center relative reveal-card">
+                    <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">2</div>
+                    <h3 class="font-heading text-lg text-azure mb-2">Profilo &amp; Priorit&agrave;</h3>
+                    <p class="text-sm text-charcoal-400">Et&agrave;, interessi, obiettivi, budget</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="text-center relative reveal-card">
+                    <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">3</div>
+                    <h3 class="font-heading text-lg text-azure mb-2">Shortlist</h3>
+                    <p class="text-sm text-charcoal-400">Laura seleziona 2&ndash;4 programmi perfetti</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="text-center relative reveal-card">
+                    <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">4</div>
+                    <h3 class="font-heading text-lg text-azure mb-2">Decisione &amp; booking</h3>
+                    <p class="text-sm text-charcoal-400">Supporto completo nella prenotazione</p>
+                </div>
+                <!-- Step 5 -->
+                <div class="text-center relative reveal-card">
+                    <div class="w-20 h-20 bg-azure text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-heading font-bold relative z-10 shadow-lg">5</div>
+                    <h3 class="font-heading text-lg text-azure mb-2">Follow-up</h3>
+                    <p class="text-sm text-charcoal-400">Verifica dettagli e contatto fino alla partenza</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- ================================================================
+         7. FEATURED PROGRAM CATEGORIES — 4 CARDS
+         ================================================================ -->
+    <section class="py-12 md:py-20 bg-white" id="categorie">
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal-section">
+                <div class="accent-line accent-line-center mb-4" aria-hidden="true"></div>
+                <h2 class="font-heading text-h2 text-azure mb-4">Programmi in evidenza</h2>
+                <p class="text-body-lg text-charcoal-400 max-w-2xl mx-auto">Esplora le principali categorie di programmi per ragazzi dai 6 ai 18 anni.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category 1: Camp estivi tradizionali -->
+                <a href="programmi.html" class="card card-bordered group overflow-hidden reveal-card">
+                    <div class="aspect-[4/3] bg-gradient-to-br from-azure-200 to-azure-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Camp estivi tradizionali</h3>
+                        <p class="text-sm text-charcoal-400 mb-3">Esperienze residenziali classiche con attivit&agrave; all&rsquo;aperto, sport, avventura e nuove amicizie in ambienti sicuri e stimolanti.</p>
+                        <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Category 2: Programmi educativi e accademici -->
+                <a href="programmi.html" class="card card-bordered group overflow-hidden reveal-card">
+                    <div class="aspect-[4/3] bg-gradient-to-br from-sand-300 to-sand-500 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Programmi educativi e accademici</h3>
+                        <p class="text-sm text-charcoal-400 mb-3">Summer school, STEM, arte, leadership: programmi per crescere e prepararsi al futuro.</p>
+                        <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Category 3: Corsi intensivi d'inglese -->
+                <a href="programmi.html" class="card card-bordered group overflow-hidden reveal-card">
+                    <div class="aspect-[4/3] bg-gradient-to-br from-terracotta-200 to-terracotta-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364V3"/></svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Corsi intensivi d&rsquo;inglese</h3>
+                        <p class="text-sm text-charcoal-400 mb-3">Immersione linguistica totale con risultati concreti: corsi certificati in UK, USA, Irlanda e altri paesi anglofoni.</p>
+                        <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Category 4: Programmi sportivi d'elite -->
+                <a href="programmi.html" class="card card-bordered group overflow-hidden reveal-card">
+                    <div class="aspect-[4/3] bg-gradient-to-br from-azure-400 to-azure-600 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0016.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.003 6.003 0 01-2.02 1.074M12 6.75a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-heading text-h4 text-azure mb-2 group-hover:text-terracotta transition-colors">Programmi sportivi d&rsquo;&eacute;lite</h3>
+                        <p class="text-sm text-charcoal-400 mb-3">Tennis, calcio, equitazione, vela e molto altro: allenamenti con coach professionisti in centri di eccellenza.</p>
+                        <span class="text-sm font-semibold text-terracotta">Scopri di pi&ugrave; &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         8. TESTIMONIALS
+         ================================================================ -->
+    <section class="py-12 md:py-20 bg-sand-100" id="testimonianze">
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal-section">
+                <div class="accent-line accent-line-center mb-4" aria-hidden="true"></div>
+                <h2 class="font-heading text-h2 text-azure mb-4">Cosa dicono le famiglie</h2>
+                <p class="text-body-lg text-charcoal-400 max-w-2xl mx-auto">Genitori come te hanno gi&agrave; trovato il programma perfetto con Laura.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card card-bordered p-8 reveal-card">
+                    <svg class="w-8 h-8 text-terracotta/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
+                    <p class="text-charcoal mb-6 leading-relaxed italic">&ldquo;Grazie a Laura mio figlio ha passato l&rsquo;estate in un programma sportivo perfetto: allenamenti di qualit&agrave; e attenzione continua. Consigliatissima!&rdquo;</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center text-azure font-bold text-sm">MR</div>
+                        <div>
+                            <p class="font-semibold text-charcoal text-sm">Maria R.</p>
+                            <p class="text-xs text-charcoal-400">Genova</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="card card-bordered p-8 reveal-card">
+                    <svg class="w-8 h-8 text-terracotta/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
+                    <p class="text-charcoal mb-6 leading-relaxed italic">&ldquo;Laura ha trovato il corso d&rsquo;inglese intensivo ideale per nostra figlia: progressi visibili gi&agrave; dopo due settimane.&rdquo;</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center text-azure font-bold text-sm">LP</div>
+                        <div>
+                            <p class="font-semibold text-charcoal text-sm">Luca P.</p>
+                            <p class="text-xs text-charcoal-400">Roma</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="card card-bordered p-8 reveal-card">
+                    <svg class="w-8 h-8 text-terracotta/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
+                    <p class="text-charcoal mb-6 leading-relaxed italic">&ldquo;Non avevamo idea da dove iniziare. Laura ci ha guidato passo dopo passo &mdash; professionale, disponibile, e soprattutto competente.&rdquo;</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center text-azure font-bold text-sm">FM</div>
+                        <div>
+                            <p class="font-semibold text-charcoal text-sm">Francesca M.</p>
+                            <p class="text-xs text-charcoal-400">Milano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         9. BOTTOM CTA
+         ================================================================ -->
+    <section class="cta-banner py-12 md:py-20" id="cta-bottom">
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center reveal-section">
+                <div class="accent-line accent-line-center mb-6" style="background-color: #F5E6CC;" aria-hidden="true"></div>
+                <h2 class="font-heading text-h2 md:text-display text-white mb-4 text-balance">Pronta/o a trovare il programma giusto?</h2>
+                <p class="text-body-lg text-azure-200 mb-8 max-w-xl mx-auto">La consulenza &egrave; gratuita per le famiglie &mdash; il nostro servizio &egrave; supportato dai partner internazionali.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="prenota.html"
+                       class="btn btn-lg bg-white text-azure hover:bg-sand-100 hover:text-azure-700 border-white font-semibold shadow-lg w-full sm:w-auto">
+                        Prenota la Consulenza Gratuita
+                    </a>
+                    <a href="mailto:laura.toledo@libello.com?subject=Richiesta%20informazioni"
+                       class="btn btn-lg border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/60 w-full sm:w-auto">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                        Scrivi a Laura
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
 
-<!-- Footer -->
+<!-- ================================================================
+     10. FOOTER
+     ================================================================ -->
 <footer class="site-footer" role="contentinfo">
-  <div class="container-site section">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-      <div class="sm:col-span-2 lg:col-span-1">
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-10 h-10 bg-azure-light rounded-lg flex items-center justify-center"><span class="text-white font-heading font-bold text-lg">CE</span></div>
-          <div class="flex flex-col leading-tight"><span class="font-heading font-bold text-white text-lg">Camp Experts</span><span class="text-terracotta-400 text-xs font-semibold tracking-wider uppercase">Italia</span></div>
+    <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+            <!-- Brand -->
+            <div class="sm:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-10 h-10 bg-azure-400 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-heading font-bold text-lg">CE</span>
+                    </div>
+                    <div class="flex flex-col leading-tight">
+                        <span class="font-heading font-bold text-white text-lg">Camp Experts</span>
+                        <span class="text-terracotta-400 text-xs font-semibold tracking-wider uppercase">Italia</span>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed mb-4">Consulenza personalizzata per summer camp e programmi educativi internazionali per famiglie italiane.</p>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-base font-heading font-semibold text-white mb-4">Contatti</h4>
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <a href="mailto:laura.toledo@libello.com" class="hover:text-white transition-colors">laura.toledo@libello.com</a>
+                    </li>
+                    <li>
+                        <a href="mailto:lauratoledo@campexperts.com" class="hover:text-white transition-colors">lauratoledo@campexperts.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+33618455997" class="hover:text-white transition-colors">+33 6 18 45 59 97</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Territory -->
+            <div>
+                <h4 class="text-base font-heading font-semibold text-white mb-4">Territorio</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li>Monaco (Principato)</li>
+                    <li>Nord Italia</li>
+                    <li>Centro Italia</li>
+                    <li>Sud Italia</li>
+                    <li>Costa Azzurra</li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-base font-heading font-semibold text-white mb-4">Link Rapidi</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="chi-sono.html" class="hover:text-white transition-colors">Chi &egrave; Laura</a></li>
+                    <li><a href="servizi.html" class="hover:text-white transition-colors">Servizi</a></li>
+                    <li><a href="programmi.html" class="hover:text-white transition-colors">Programmi</a></li>
+                    <li><a href="prenota.html" class="hover:text-white transition-colors">Prenota</a></li>
+                    <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                </ul>
+            </div>
         </div>
-        <p class="text-sm leading-relaxed mb-4 text-charcoal-100">Consulenza personalizzata per summer camp e programmi educativi internazionali per famiglie italiane.</p>
-      </div>
-      <div>
-        <h4 class="text-base font-heading font-semibold text-white mb-4">Contatti</h4>
-        <ul class="space-y-3 text-sm">
-          <li><a href="mailto:laura.toledo@libello.com" class="hover:text-white transition-colors">laura.toledo@libello.com</a></li>
-          <li><a href="mailto:lauratoledo@campexperts.com" class="hover:text-white transition-colors">lauratoledo@campexperts.com</a></li>
-          <li><a href="tel:+33618455997" class="hover:text-white transition-colors">+33 6 18 45 59 97</a></li>
-          <li><a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-base font-heading font-semibold text-white mb-4">Territori</h4>
-        <ul class="space-y-2.5 text-sm">
-          <li>Monaco</li>
-          <li>Venezia / Nord Italia</li>
-          <li>Roma / Sud Italia</li>
-          <li>Ovest / Monaco</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-base font-heading font-semibold text-white mb-4">Link Rapidi</h4>
-        <ul class="space-y-2.5 text-sm">
-          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-          <li><a href="/chi-sono.html" class="hover:text-white transition-colors">Chi &egrave; Laura</a></li>
-          <li><a href="/servizi.html" class="hover:text-white transition-colors">Servizi</a></li>
-          <li><a href="/programmi.html" class="hover:text-white transition-colors">Programmi</a></li>
-          <li><a href="/prenota.html" class="hover:text-white transition-colors">Prenota</a></li>
-          <li><a href="/faq.html" class="hover:text-white transition-colors">FAQ</a></li>
-        </ul>
-      </div>
     </div>
-  </div>
-  <div class="border-t footer-divider">
-    <div class="container-site py-6">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-charcoal-200">
-        <p>&copy; 2026 Camp Experts Italia. Tutti i diritti riservati.</p>
-        <nav class="flex items-center gap-4"><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a><span class="text-charcoal-600">|</span><a href="/cookie.html" class="hover:text-white transition-colors">Cookie Policy</a></nav>
-      </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/10">
+        <div class="max-w-[75rem] mx-auto px-5 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-charcoal-200">
+                <p>&copy; 2026 Camp Experts Italia. Tutti i diritti riservati.</p>
+                <nav class="flex items-center gap-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <span class="text-charcoal-600">|</span>
+                    <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
 
-<!-- WhatsApp FAB -->
-<a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Contattaci su WhatsApp" title="Scrivici su WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<!-- ================================================================
+     11. WHATSAPP FAB
+     ================================================================ -->
+<a href="https://wa.me/33618455997"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-fab"
+   aria-label="Contattaci su WhatsApp"
+   title="Scrivici su WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- Mobile Nav Script -->
+<!-- ================================================================
+     JAVASCRIPT — Mobile Nav + Scroll Reveal (IntersectionObserver)
+     ================================================================ -->
 <script>
 (function() {
-  var menuBtn = document.getElementById('mobile-menu-btn');
-  var overlay = document.getElementById('mobile-nav');
-  var closeBtn = document.getElementById('mobile-nav-close');
-  var backdrop = document.getElementById('mobile-nav-backdrop');
-  function openMenu() { overlay.classList.add('is-open'); document.body.classList.add('nav-open'); menuBtn.setAttribute('aria-expanded','true'); menuBtn.querySelector('.hamburger-icon').classList.add('hidden'); menuBtn.querySelector('.close-icon').classList.remove('hidden'); closeBtn.focus(); }
-  function closeMenu() { overlay.classList.remove('is-open'); document.body.classList.remove('nav-open'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.querySelector('.hamburger-icon').classList.remove('hidden'); menuBtn.querySelector('.close-icon').classList.add('hidden'); }
-  menuBtn.addEventListener('click', function() { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
-  closeBtn.addEventListener('click', closeMenu);
-  backdrop.addEventListener('click', closeMenu);
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
-  overlay.querySelectorAll('.mobile-nav-link').forEach(function(l) { l.addEventListener('click', closeMenu); });
-})();
-</script>
+    'use strict';
 
-<!-- Scroll Animations -->
-<script>
-(function() {
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) { entry.target.classList.add('animate-in'); observer.unobserve(entry.target); }
+    // ---- Mobile Navigation ----
+    var menuBtn = document.getElementById('mobile-menu-btn');
+    var overlay = document.getElementById('mobile-nav');
+    var closeBtn = document.getElementById('mobile-nav-close');
+    var backdrop = document.getElementById('mobile-nav-backdrop');
+
+    function openMenu() {
+        overlay.classList.add('is-open');
+        document.body.classList.add('nav-open');
+        menuBtn.setAttribute('aria-expanded', 'true');
+        menuBtn.querySelector('.hamburger-icon').classList.add('hidden');
+        menuBtn.querySelector('.close-icon').classList.remove('hidden');
+        closeBtn.focus();
+    }
+
+    function closeMenu() {
+        overlay.classList.remove('is-open');
+        document.body.classList.remove('nav-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.querySelector('.hamburger-icon').classList.remove('hidden');
+        menuBtn.querySelector('.close-icon').classList.add('hidden');
+    }
+
+    menuBtn.addEventListener('click', function() {
+        overlay.classList.contains('is-open') ? closeMenu() : openMenu();
     });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.card, section > .container-site > .text-center').forEach(function(el) {
-    el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; observer.observe(el);
-  });
-  document.head.insertAdjacentHTML('beforeend', '<style>.animate-in{opacity:1!important;transform:translateY(0)!important;}</style>');
+    closeBtn.addEventListener('click', closeMenu);
+    backdrop.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+            closeMenu();
+        }
+    });
+
+    overlay.querySelectorAll('.mobile-nav-link, .btn').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // ---- Scroll Reveal with IntersectionObserver ----
+    if ('IntersectionObserver' in window) {
+        // Section-level reveals
+        var sectionObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    sectionObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal-section').forEach(function(el) {
+            sectionObserver.observe(el);
+        });
+
+        // Card-level reveals with staggered delay
+        var cardObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    // Find all sibling reveal-cards in the same parent grid
+                    var parent = entry.target.parentElement;
+                    var siblings = parent.querySelectorAll('.reveal-card');
+                    siblings.forEach(function(sib, i) {
+                        setTimeout(function() {
+                            sib.classList.add('is-visible');
+                        }, i * 100);
+                    });
+                    // Unobserve all siblings to prevent re-triggering
+                    siblings.forEach(function(sib) {
+                        cardObserver.unobserve(sib);
+                    });
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        document.querySelectorAll('.reveal-card').forEach(function(el) {
+            cardObserver.observe(el);
+        });
+    } else {
+        // Fallback: show everything immediately
+        document.querySelectorAll('.reveal-section, .reveal-card').forEach(function(el) {
+            el.classList.add('is-visible');
+        });
+    }
 })();
 </script>
 
