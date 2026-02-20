@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Page Title -->
+  <title>Blog &mdash; Guida per le Famiglie | Camp Experts Italia</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Articoli, guide e risorse per famiglie italiane alla ricerca di camp estivi e programmi educativi internazionali. Consigli di Laura Toledo, Camp Experts Italia.">
+  <meta name="keywords" content="blog, guida famiglie, camp estivi, summer camp, consigli, articoli, Camp Experts Italia">
+  <meta name="author" content="Camp Experts Italia">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.campexpertsitalia.com/blog.html">
+  <meta property="og:title" content="Blog &mdash; Guida per le Famiglie | Camp Experts Italia">
+  <meta property="og:description" content="Articoli, guide e risorse per famiglie italiane alla ricerca di camp estivi e programmi educativi internazionali.">
+  <meta property="og:image" content="https://www.campexpertsitalia.com/assets/images/og-image.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Camp Experts Italia">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog &mdash; Guida per le Famiglie | Camp Experts Italia">
+  <meta name="twitter:description" content="Articoli, guide e risorse per famiglie italiane alla ricerca di camp estivi e programmi educativi internazionali.">
+  <meta name="twitter:image" content="https://www.campexpertsitalia.com/assets/images/og-image.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.campexpertsitalia.com/blog.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+
+  <!-- Preconnect to external resources for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts: Inter + Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&subset=latin,latin-ext&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Configuration -->
+  <script src="/tailwind.config.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="font-body text-charcoal bg-white antialiased">
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+
+  <!-- Skip to content link (accessibility) -->
+  <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container-site">
+      <div class="flex items-center justify-between py-2">
+        <a href="tel:+33618455997" class="flex items-center gap-1.5 text-sm" aria-label="Chiamaci al +33 6 18 45 59 97">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          <span class="hidden sm:inline">+33 6 18 45 59 97</span>
+          <span class="sm:hidden">Chiama</span>
+        </a>
+        <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-sm" aria-label="Contattaci su WhatsApp">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-white sticky top-0 z-40 shadow-nav" role="banner">
+    <div class="container-site">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2 group" aria-label="Camp Experts Italia - Torna alla home">
+          <div class="w-10 h-10 md:w-12 md:h-12 bg-azure rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <span class="text-white font-heading font-bold text-lg md:text-xl">CE</span>
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="font-heading font-bold text-azure text-lg md:text-xl tracking-tight group-hover:text-azure-700 transition-colors duration-200">
+              Camp Experts
+            </span>
+            <span class="text-terracotta text-xs md:text-sm font-semibold tracking-wider uppercase">
+              Italia
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-8" role="navigation" aria-label="Navigazione principale">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/chi-sono.html" class="nav-link">Chi &egrave; Laura</a>
+          <a href="/servizi.html" class="nav-link">Servizi</a>
+          <a href="/programmi.html" class="nav-link">Programmi</a>
+          <a href="/faq.html" class="nav-link">FAQ</a>
+          <a href="/prenota.html" class="btn btn-primary btn-sm">Prenota</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          type="button"
+          class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-charcoal hover:bg-sand-100 transition-colors duration-200"
+          id="mobile-menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Apri il menu di navigazione"
+        >
+          <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+          <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu di navigazione">
+    <div class="absolute inset-0" id="mobile-nav-backdrop" aria-hidden="true"></div>
+    <div class="mobile-nav-panel">
+      <div class="flex items-center justify-between p-4 border-b border-gray-100">
+        <span class="font-heading font-bold text-azure text-lg">Menu</span>
+        <button type="button" class="flex items-center justify-center w-10 h-10 rounded-lg text-charcoal hover:bg-sand-100 transition-colors duration-200" id="mobile-nav-close" aria-label="Chiudi il menu di navigazione">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav aria-label="Navigazione mobile">
+        <a href="/" class="mobile-nav-link">Home</a>
+        <a href="/chi-sono.html" class="mobile-nav-link">Chi &egrave; Laura</a>
+        <a href="/servizi.html" class="mobile-nav-link">Servizi</a>
+        <a href="/programmi.html" class="mobile-nav-link">Programmi</a>
+        <a href="/faq.html" class="mobile-nav-link">FAQ</a>
+      </nav>
+      <div class="p-4 mt-4 space-y-3">
+        <a href="/prenota.html" class="btn btn-primary w-full">Prenota una Consulenza</a>
+        <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="p-4 mt-2 border-t border-gray-100">
+        <a href="tel:+33618455997" class="flex items-center gap-2 text-charcoal-400 hover:text-azure text-sm py-2 transition-colors duration-200">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          +33 6 18 45 59 97
+        </a>
+        <a href="mailto:laura.toledo@libello.com" class="flex items-center gap-2 text-charcoal-400 hover:text-azure text-sm py-2 transition-colors duration-200">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+          </svg>
+          laura.toledo@libello.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Toggle Script -->
+  <script>
+  (function() {
+    'use strict';
+    var menuBtn = document.getElementById('mobile-menu-btn');
+    var overlay = document.getElementById('mobile-nav');
+    var closeBtn = document.getElementById('mobile-nav-close');
+    var backdrop = document.getElementById('mobile-nav-backdrop');
+    var hamburgerIcon = menuBtn.querySelector('.hamburger-icon');
+    var closeIcon = menuBtn.querySelector('.close-icon');
+
+    function openMenu() {
+      overlay.classList.add('is-open');
+      document.body.classList.add('nav-open');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      hamburgerIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+      closeBtn.focus();
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('is-open');
+      document.body.classList.remove('nav-open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      hamburgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+      menuBtn.focus();
+    }
+
+    menuBtn.addEventListener('click', function() {
+      var isOpen = overlay.classList.contains('is-open');
+      if (isOpen) { closeMenu(); } else { openMenu(); }
+    });
+
+    closeBtn.addEventListener('click', closeMenu);
+    backdrop.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open')) { closeMenu(); }
+    });
+
+    var mobileLinks = overlay.querySelectorAll('.mobile-nav-link');
+    mobileLinks.forEach(function(link) { link.addEventListener('click', closeMenu); });
+  })();
+  </script>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content" role="main">
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="bg-azure text-white section-lg relative overflow-hidden">
+      <!-- Decorative background pattern -->
+      <div class="absolute inset-0 opacity-5" aria-hidden="true">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-1/2 -translate-x-1/4"></div>
+      </div>
+
+      <div class="container-site relative z-10">
+        <div class="max-w-narrow mx-auto text-center">
+          <!-- Breadcrumb -->
+          <nav class="mb-6" aria-label="Breadcrumb">
+            <ol class="flex items-center justify-center gap-2 text-sm text-azure-200">
+              <li><a href="/" class="hover:text-white transition-colors duration-200">Home</a></li>
+              <li aria-hidden="true">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+              </li>
+              <li><span aria-current="page">Blog</span></li>
+            </ol>
+          </nav>
+
+          <div class="accent-line accent-line-center mb-6" style="background-color: var(--color-sand);" aria-hidden="true"></div>
+
+          <h1 class="font-heading text-h1 md:text-display text-white mb-4 text-balance">
+            Guida per le famiglie
+          </h1>
+          <p class="text-body-lg text-azure-200 max-w-xl mx-auto">
+            Articoli e risorse per aiutarti a scegliere le migliori esperienze educative per i tuoi figli.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOG ARTICLE GRID ========== -->
+    <section class="section bg-white" aria-label="Articoli del blog">
+      <div class="container-site">
+
+        <!-- Grid: 2 cols desktop, 1 col mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-content mx-auto">
+
+          <!-- Article Card 1 -->
+          <article class="card card-bordered group">
+            <!-- Placeholder Image -->
+            <div class="aspect-[16/9] bg-sand-200 relative overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center text-charcoal-300">
+                <svg class="w-16 h-16 opacity-40" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a2.25 2.25 0 002.25-2.25V5.25a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 003.75 21z"/>
+                </svg>
+              </div>
+              <!-- Category Tag -->
+              <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-azure text-white">
+                Consigli
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="flex items-center gap-2 text-sm text-charcoal-300 mb-3">
+                <time datetime="2026-02-10">10 Febbraio 2026</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>5 min di lettura</span>
+              </div>
+              <h2 class="font-heading text-h4 text-azure mb-3 group-hover:text-azure-700 transition-colors duration-200">
+                <a href="#" class="after:absolute after:inset-0 relative">
+                  Come scegliere il camp estivo giusto per tuo figlio
+                </a>
+              </h2>
+              <p class="text-charcoal-400 text-body-sm leading-relaxed mb-4">
+                Dai fattori da considerare alla checklist completa: tutto quello che serve per trovare il programma estivo ideale in base all&rsquo;et&agrave;, agli interessi e alla personalit&agrave; di tuo figlio.
+              </p>
+              <span class="inline-flex items-center gap-1 text-azure font-semibold text-sm group-hover:gap-2 transition-all duration-200">
+                Leggi
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Article Card 2 -->
+          <article class="card card-bordered group">
+            <div class="aspect-[16/9] bg-sand-200 relative overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center text-charcoal-300">
+                <svg class="w-16 h-16 opacity-40" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a2.25 2.25 0 002.25-2.25V5.25a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 003.75 21z"/>
+                </svg>
+              </div>
+              <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-terracotta text-white">
+                Sport
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="flex items-center gap-2 text-sm text-charcoal-300 mb-3">
+                <time datetime="2026-01-22">22 Gennaio 2026</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>7 min di lettura</span>
+              </div>
+              <h2 class="font-heading text-h4 text-azure mb-3 group-hover:text-azure-700 transition-colors duration-200">
+                <a href="#" class="after:absolute after:inset-0 relative">
+                  I 10 migliori camp sportivi negli USA per ragazzi italiani
+                </a>
+              </h2>
+              <p class="text-charcoal-400 text-body-sm leading-relaxed mb-4">
+                Dal basket al tennis, dal nuoto all&rsquo;equitazione: la nostra selezione dei programmi sportivi pi&ugrave; adatti a ragazzi italiani che desiderano un&rsquo;estate attiva e internazionale.
+              </p>
+              <span class="inline-flex items-center gap-1 text-azure font-semibold text-sm group-hover:gap-2 transition-all duration-200">
+                Leggi
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Article Card 3 -->
+          <article class="card card-bordered group">
+            <div class="aspect-[16/9] bg-sand-200 relative overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center text-charcoal-300">
+                <svg class="w-16 h-16 opacity-40" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a2.25 2.25 0 002.25-2.25V5.25a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 003.75 21z"/>
+                </svg>
+              </div>
+              <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-azure-500 text-white">
+                Lingue
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="flex items-center gap-2 text-sm text-charcoal-300 mb-3">
+                <time datetime="2025-12-15">15 Dicembre 2025</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>6 min di lettura</span>
+              </div>
+              <h2 class="font-heading text-h4 text-azure mb-3 group-hover:text-azure-700 transition-colors duration-200">
+                <a href="#" class="after:absolute after:inset-0 relative">
+                  Corso d&rsquo;inglese all&rsquo;estero: guida completa per genitori
+                </a>
+              </h2>
+              <p class="text-charcoal-400 text-body-sm leading-relaxed mb-4">
+                Quanto dura il corso ideale? Qual &egrave; l&rsquo;et&agrave; giusta per iniziare? Rispondiamo a tutte le domande dei genitori sui corsi di lingua all&rsquo;estero per ragazzi.
+              </p>
+              <span class="inline-flex items-center gap-1 text-azure font-semibold text-sm group-hover:gap-2 transition-all duration-200">
+                Leggi
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Article Card 4 -->
+          <article class="card card-bordered group">
+            <div class="aspect-[16/9] bg-sand-200 relative overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center text-charcoal-300">
+                <svg class="w-16 h-16 opacity-40" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a2.25 2.25 0 002.25-2.25V5.25a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 003.75 21z"/>
+                </svg>
+              </div>
+              <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-azure text-white">
+                Consigli
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="flex items-center gap-2 text-sm text-charcoal-300 mb-3">
+                <time datetime="2025-11-08">8 Novembre 2025</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>4 min di lettura</span>
+              </div>
+              <h2 class="font-heading text-h4 text-azure mb-3 group-hover:text-azure-700 transition-colors duration-200">
+                <a href="#" class="after:absolute after:inset-0 relative">
+                  Primo camp estivo all&rsquo;estero? Ecco come preparare tuo figlio
+                </a>
+              </h2>
+              <p class="text-charcoal-400 text-body-sm leading-relaxed mb-4">
+                Dalla valigia alla preparazione emotiva, passando per i documenti necessari: una guida pratica per affrontare con serenit&agrave; la prima esperienza di camp all&rsquo;estero.
+              </p>
+              <span class="inline-flex items-center gap-1 text-azure font-semibold text-sm group-hover:gap-2 transition-all duration-200">
+                Leggi
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Article Card 5 -->
+          <article class="card card-bordered group md:col-span-2 lg:col-span-1">
+            <div class="aspect-[16/9] bg-sand-200 relative overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center text-charcoal-300">
+                <svg class="w-16 h-16 opacity-40" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a2.25 2.25 0 002.25-2.25V5.25a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 003.75 21z"/>
+                </svg>
+              </div>
+              <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sand-600 text-white">
+                Eventi
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="flex items-center gap-2 text-sm text-charcoal-300 mb-3">
+                <time datetime="2026-01-30">30 Gennaio 2026</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>3 min di lettura</span>
+              </div>
+              <h2 class="font-heading text-h4 text-azure mb-3 group-hover:text-azure-700 transition-colors duration-200">
+                <a href="#" class="after:absolute after:inset-0 relative">
+                  Monaco Expo 2026: cosa aspettarsi e come partecipare
+                </a>
+              </h2>
+              <p class="text-charcoal-400 text-body-sm leading-relaxed mb-4">
+                Camp Experts Italia sar&agrave; presente all&rsquo;Expo di Monaco 2026. Scopri come incontrare Laura, esplorare i programmi e ottenere una consulenza in anteprima.
+              </p>
+              <span class="inline-flex items-center gap-1 text-azure font-semibold text-sm group-hover:gap-2 transition-all duration-200">
+                Leggi
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Load More (placeholder) -->
+        <div class="text-center mt-12">
+          <p class="text-charcoal-300 text-sm mb-4">Mostrando 5 di 5 articoli</p>
+          <!--
+          <button type="button" class="btn btn-outline">
+            Carica altri articoli
+          </button>
+          -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== NEWSLETTER CTA ========== -->
+    <section class="section bg-sand-100" aria-label="Iscriviti alla newsletter">
+      <div class="container-site">
+        <div class="max-w-narrow mx-auto text-center">
+          <div class="accent-line accent-line-center mb-6" aria-hidden="true"></div>
+          <h2 class="font-heading text-h2 text-azure mb-4 text-balance">
+            Resta aggiornato
+          </h2>
+          <p class="text-body-lg text-charcoal-400 mb-8 max-w-xl mx-auto">
+            Iscriviti per ricevere i nuovi articoli, le guide e le novit&agrave; sui migliori programmi estivi direttamente nella tua casella email.
+          </p>
+
+          <!-- Newsletter Form Placeholder -->
+          <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" action="#" method="POST">
+            <label for="newsletter-email" class="sr-only">Il tuo indirizzo email</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="La tua email"
+              required
+              class="flex-1 px-4 py-3 rounded-button border border-gray-300 text-charcoal focus:outline-none focus:ring-2 focus:ring-azure focus:border-azure text-body-sm"
+            >
+            <button type="submit" class="btn btn-primary whitespace-nowrap">
+              Iscriviti
+            </button>
+          </form>
+
+          <p class="text-xs text-charcoal-300 mt-4">
+            Nessuno spam, solo contenuti utili. Puoi disiscriverti in qualsiasi momento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-site section">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-azure-light rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <span class="text-white font-heading font-bold text-lg">CE</span>
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span class="font-heading font-bold text-white text-lg">Camp Experts</span>
+              <span class="text-terracotta-400 text-xs font-semibold tracking-wider uppercase">Italia</span>
+            </div>
+          </div>
+          <p class="text-sm leading-relaxed mb-4 text-charcoal-100">
+            Consulenza personalizzata per summer camp e programmi educativi internazionali.
+            Guida esperta per famiglie italiane alla ricerca delle migliori esperienze estive per i propri figli.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-base font-heading font-semibold mb-4">Contatti</h4>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="mailto:laura.toledo@libello.com" class="flex items-start gap-2 hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                </svg>
+                laura.toledo@libello.com
+              </a>
+            </li>
+            <li>
+              <a href="mailto:lauratoledo@campexperts.com" class="flex items-start gap-2 hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                </svg>
+                lauratoledo@campexperts.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+33618455997" class="flex items-start gap-2 hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                </svg>
+                +33 6 18 45 59 97
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="flex items-start gap-2 hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-base font-heading font-semibold mb-4">Territori Serviti</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-terracotta-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>
+              Monaco
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-terracotta-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>
+              Venezia / Nord Italia
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-terracotta-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>
+              Roma / Sud Italia
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-terracotta-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>
+              Ovest / Monaco
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-base font-heading font-semibold mb-4">Link Rapidi</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="/" class="hover:text-white transition-colors duration-200">Home</a></li>
+            <li><a href="/chi-sono.html" class="hover:text-white transition-colors duration-200">Chi &egrave; Laura</a></li>
+            <li><a href="/servizi.html" class="hover:text-white transition-colors duration-200">Servizi</a></li>
+            <li><a href="/programmi.html" class="hover:text-white transition-colors duration-200">Programmi</a></li>
+            <li><a href="/prenota.html" class="hover:text-white transition-colors duration-200">Prenota una Consulenza</a></li>
+            <li><a href="/faq.html" class="hover:text-white transition-colors duration-200">FAQ</a></li>
+          </ul>
+          <div class="mt-6">
+            <h5 class="text-xs font-semibold uppercase tracking-wider text-charcoal-200 mb-3">Certificazioni</h5>
+            <div class="flex items-center gap-3">
+              <div class="w-16 h-10 bg-charcoal-600 rounded flex items-center justify-center text-xs text-charcoal-300" aria-label="Logo certificazione placeholder">Logo</div>
+              <div class="w-16 h-10 bg-charcoal-600 rounded flex items-center justify-center text-xs text-charcoal-300" aria-label="Logo certificazione placeholder">Logo</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border-t footer-divider">
+      <div class="container-site py-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-charcoal-200">
+          <p>&copy; 2026 Camp Experts Italia. Tutti i diritti riservati.</p>
+          <nav class="flex items-center gap-4" aria-label="Link legali">
+            <a href="/privacy.html" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+            <span class="text-charcoal-600" aria-hidden="true">|</span>
+            <a href="/cookie.html" class="hover:text-white transition-colors duration-200">Cookie Policy</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       WHATSAPP FAB
+       ============================================================ -->
+  <a
+    href="https://wa.me/33618455997"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-fab"
+    aria-label="Contattaci su WhatsApp"
+    title="Scrivici su WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Additional inline styles for blog cards -->
+  <style>
+    /* Make the entire card clickable via the heading link */
+    .card {
+      position: relative;
+    }
+
+    /* Hero section spacing */
+    .section-lg {
+      padding-top: var(--section-padding-y-lg, 7rem);
+      padding-bottom: var(--section-padding-y-lg, 7rem);
+    }
+
+    @media (max-width: 767px) {
+      .section-lg {
+        padding-top: var(--section-padding-y, 5rem);
+        padding-bottom: var(--section-padding-y, 5rem);
+      }
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+# robots.txt - Camp Experts Italia
+# https://www.campexpertsitalia.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.campexpertsitalia.com/sitemap.xml
+
+# Disallow admin/internal paths (if any)
+Disallow: /components/
+Disallow: /_base.html

@@ -1,0 +1,222 @@
+<!-- ======================================================================
+     Cookie Banner Component - Camp Experts Italia
+     GDPR-compliant cookie consent banner (Italian language)
+
+     USAGE:
+     Include this component at the bottom of every page, just before </body>.
+     The banner auto-hides after the user makes a choice and stores the
+     preference in localStorage under the key "ce_cookie_consent".
+
+     GA4 CONSENT MODE INTEGRATION:
+     See the comments inside the script for how to connect this banner
+     to Google Analytics 4 Consent Mode v2.
+     ====================================================================== -->
+
+<!-- Cookie Consent Banner -->
+<div
+  id="cookie-banner"
+  class="cookie-banner"
+  role="dialog"
+  aria-label="Consenso cookie"
+  aria-describedby="cookie-banner-text"
+  style="display: none;"
+>
+  <div class="container-site">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-4">
+
+      <!-- Banner Text -->
+      <p id="cookie-banner-text" class="text-sm text-white leading-relaxed text-center sm:text-left">
+        Questo sito utilizza cookie per migliorare la tua esperienza.
+        Consulta la nostra <a href="/cookie.html" class="underline underline-offset-2 hover:text-sand-300 transition-colors duration-200">Cookie Policy</a> per maggiori informazioni.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <button
+          type="button"
+          id="cookie-reject"
+          class="px-4 py-2 text-sm font-semibold text-white border border-white/30 rounded-button hover:bg-white/10 hover:border-white/60 transition-all duration-200"
+        >
+          Rifiuta
+        </button>
+        <button
+          type="button"
+          id="cookie-accept"
+          class="px-4 py-2 text-sm font-semibold bg-white text-azure rounded-button hover:bg-sand-100 transition-all duration-200"
+        >
+          Accetta
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Cookie Banner Styles -->
+<style>
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--color-charcoal, #2C3E50);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    /* Slide-up animation */
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+  }
+
+  .cookie-banner.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .cookie-banner.is-hiding {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+</style>
+
+<!-- Cookie Banner Script -->
+<script>
+(function() {
+  'use strict';
+
+  var STORAGE_KEY = 'ce_cookie_consent';
+  var banner = document.getElementById('cookie-banner');
+  var acceptBtn = document.getElementById('cookie-accept');
+  var rejectBtn = document.getElementById('cookie-reject');
+
+  // ---------------------------------------------------------------
+  // GA4 CONSENT MODE v2 INTEGRATION
+  //
+  // If you are using Google Analytics 4 with Consent Mode, add this
+  // BEFORE your GA4/GTM script tag in the <head>:
+  //
+  //   <script>
+  //     window.dataLayer = window.dataLayer || [];
+  //     function gtag(){dataLayer.push(arguments);}
+  //
+  //     // Default: deny all until user consents
+  //     gtag('consent', 'default', {
+  //       'analytics_storage': 'denied',
+  //       'ad_storage': 'denied',
+  //       'ad_user_data': 'denied',
+  //       'ad_personalization': 'denied',
+  //       'wait_for_update': 500
+  //     });
+  //   </script>
+  //
+  // Then, in the updateConsent() function below, the appropriate
+  // gtag('consent', 'update', {...}) call is made when the user
+  // accepts or rejects cookies.
+  // ---------------------------------------------------------------
+
+  /**
+   * Update GA4 consent mode based on user choice.
+   * @param {boolean} granted - Whether the user accepted cookies.
+   */
+  function updateConsent(granted) {
+    var status = granted ? 'granted' : 'denied';
+
+    // Uncomment the following block when GA4 / GTM is installed:
+    /*
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        'analytics_storage': status,
+        'ad_storage': status,
+        'ad_user_data': status,
+        'ad_personalization': status
+      });
+    }
+    */
+
+    // Optional: dispatch a custom event for other scripts to listen to
+    try {
+      window.dispatchEvent(new CustomEvent('cookieConsentUpdate', {
+        detail: { consent: granted }
+      }));
+    } catch (e) {
+      // Fallback for older browsers
+    }
+  }
+
+  /**
+   * Save user preference and hide the banner.
+   * @param {string} choice - 'accepted' or 'rejected'
+   */
+  function saveChoice(choice) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        choice: choice,
+        timestamp: new Date().toISOString()
+      }));
+    } catch (e) {
+      // localStorage not available (private browsing, etc.)
+    }
+
+    updateConsent(choice === 'accepted');
+    hideBanner();
+  }
+
+  /**
+   * Show the cookie banner with slide-up animation.
+   */
+  function showBanner() {
+    banner.style.display = 'block';
+    // Force a reflow before adding the animation class
+    banner.offsetHeight;
+    banner.classList.add('is-visible');
+    // Focus the accept button for accessibility
+    acceptBtn.focus();
+  }
+
+  /**
+   * Hide the cookie banner with slide-down animation.
+   */
+  function hideBanner() {
+    banner.classList.remove('is-visible');
+    banner.classList.add('is-hiding');
+
+    // Wait for animation to complete before hiding
+    setTimeout(function() {
+      banner.style.display = 'none';
+      banner.classList.remove('is-hiding');
+    }, 400);
+  }
+
+  /**
+   * Check if user has already made a choice.
+   * @returns {object|null} The stored consent data, or null.
+   */
+  function getStoredConsent() {
+    try {
+      var stored = localStorage.getItem(STORAGE_KEY);
+      return stored ? JSON.parse(stored) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Event listeners
+  acceptBtn.addEventListener('click', function() {
+    saveChoice('accepted');
+  });
+
+  rejectBtn.addEventListener('click', function() {
+    saveChoice('rejected');
+  });
+
+  // Initialize: only show banner if no consent has been recorded
+  var consent = getStoredConsent();
+  if (consent) {
+    // User already made a choice - apply it silently
+    updateConsent(consent.choice === 'accepted');
+  } else {
+    // No choice recorded - show the banner after a short delay
+    setTimeout(showBanner, 800);
+  }
+})();
+</script>

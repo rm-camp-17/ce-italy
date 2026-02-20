@@ -1,0 +1,644 @@
+/* ==========================================================================
+   Camp Experts Italia - Custom Styles
+   Mediterranean design system: azure, terracotta, sand, charcoal
+   WCAG AA compliant contrast ratios throughout
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Google Fonts: Inter (body) + Playfair Display (headings)
+   Subset includes Latin Extended for Italian accented vowels:
+   à, è, é, ì, ò, ù
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&subset=latin,latin-ext&display=swap');
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   -------------------------------------------------------------------------- */
+:root {
+  /* Primary palette */
+  --color-azure: #1B4F72;
+  --color-azure-light: #3378B4;
+  --color-azure-dark: #163F5B;
+  --color-terracotta: #C0392B;
+  --color-terracotta-light: #E65541;
+  --color-terracotta-dark: #9A2E23;
+  --color-sand: #F5E6CC;
+  --color-sand-light: #FDF8F0;
+  --color-charcoal: #2C3E50;
+  --color-charcoal-light: #586F7F;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Spacing */
+  --section-padding-y: 5rem;
+  --section-padding-y-sm: 3rem;
+  --section-padding-y-lg: 7rem;
+
+  /* Shadows */
+  --shadow-card: 0 4px 6px -1px rgba(27, 79, 114, 0.08),
+                 0 2px 4px -2px rgba(27, 79, 114, 0.05);
+  --shadow-card-hover: 0 10px 25px -5px rgba(27, 79, 114, 0.12),
+                       0 8px 10px -6px rgba(27, 79, 114, 0.06);
+  --shadow-nav: 0 2px 8px -1px rgba(44, 62, 80, 0.1);
+
+  /* Border radius */
+  --radius-card: 0.75rem;
+  --radius-button: 0.5rem;
+  --radius-full: 9999px;
+}
+
+/* --------------------------------------------------------------------------
+   Global Reset & Base Styles
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Ensure Italian accented characters render cleanly */
+body,
+input,
+textarea,
+select,
+button {
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-azure);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 { font-size: 2.5rem; letter-spacing: -0.015em; }
+h2 { font-size: 2rem; letter-spacing: -0.01em; font-weight: 600; }
+h3 { font-size: 1.5rem; letter-spacing: -0.005em; font-weight: 600; }
+h4 { font-size: 1.25rem; font-weight: 600; }
+
+@media (min-width: 768px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.25rem; }
+  h3 { font-size: 1.75rem; }
+}
+
+@media (min-width: 1024px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.5rem; }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-azure);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-azure-light);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-azure-light);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Utility Classes
+   -------------------------------------------------------------------------- */
+
+/* Text utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-azure), var(--color-azure-light));
+  -webkit-background-clip: text;
+  -webkit-text-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Container */
+.container-site {
+  width: 100%;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-site {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-site {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Section Spacing
+   -------------------------------------------------------------------------- */
+.section {
+  padding-top: var(--section-padding-y-sm);
+  padding-bottom: var(--section-padding-y-sm);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-lg {
+    padding-top: var(--section-padding-y-lg);
+    padding-bottom: var(--section-padding-y-lg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Button Styles
+   WCAG AA: white (#FFF) on azure (#1B4F72) = 7.64:1 contrast ratio
+   WCAG AA: white (#FFF) on terracotta (#C0392B) = 5.02:1 contrast ratio
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-button);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-azure-light);
+  outline-offset: 2px;
+}
+
+/* Primary: azure background, white text */
+.btn-primary {
+  background-color: var(--color-azure);
+  color: var(--color-white);
+  border-color: var(--color-azure);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-azure-dark);
+  border-color: var(--color-azure-dark);
+  color: var(--color-white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(27, 79, 114, 0.25);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary: terracotta background, white text */
+.btn-secondary {
+  background-color: var(--color-terracotta);
+  color: var(--color-white);
+  border-color: var(--color-terracotta);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-terracotta-dark);
+  border-color: var(--color-terracotta-dark);
+  color: var(--color-white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.25);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* Outline: transparent bg, azure border and text */
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-azure);
+  border-color: var(--color-azure);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-azure);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+/* Ghost: minimal style */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-azure);
+  border-color: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(27, 79, 114, 0.06);
+  color: var(--color-azure-dark);
+}
+
+/* Button sizes */
+.btn-sm {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding: 1rem 2.25rem;
+  font-size: 1.125rem;
+}
+
+/* --------------------------------------------------------------------------
+   Card Styles
+   -------------------------------------------------------------------------- */
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-body {
+    padding: 2rem;
+  }
+}
+
+.card-bordered {
+  border: 1px solid #E5E7EB;
+}
+
+.card-sand {
+  background-color: var(--color-sand-light);
+}
+
+/* --------------------------------------------------------------------------
+   Navigation Styles
+   -------------------------------------------------------------------------- */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  color: var(--color-charcoal);
+  transition: color var(--transition-base);
+  padding: 0.5rem 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-azure);
+}
+
+/* Animated underline on desktop nav links */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-terracotta);
+  transition: width var(--transition-base);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Navigation Overlay
+   -------------------------------------------------------------------------- */
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(44, 62, 80, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-slow), visibility var(--transition-slow);
+}
+
+.mobile-nav-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 51;
+  width: 85%;
+  max-width: 24rem;
+  background-color: var(--color-white);
+  box-shadow: -4px 0 20px rgba(44, 62, 80, 0.15);
+  transform: translateX(100%);
+  transition: transform var(--transition-slow);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-overlay.is-open .mobile-nav-panel {
+  transform: translateX(0);
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-charcoal);
+  border-bottom: 1px solid #F3F4F6;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  background-color: var(--color-sand-light);
+  color: var(--color-azure);
+}
+
+/* Body scroll lock when mobile nav is open */
+body.nav-open {
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Top Bar (phone/WhatsApp strip)
+   -------------------------------------------------------------------------- */
+.top-bar {
+  background-color: var(--color-azure);
+  color: var(--color-white);
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+}
+
+.top-bar a {
+  color: var(--color-white);
+  transition: opacity var(--transition-base);
+}
+
+.top-bar a:hover {
+  opacity: 0.85;
+  color: var(--color-white);
+}
+
+/* --------------------------------------------------------------------------
+   WhatsApp Floating Action Button
+   -------------------------------------------------------------------------- */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 40;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #25D366;
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  text-decoration: none;
+}
+
+.whatsapp-fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.55);
+  color: var(--color-white);
+}
+
+.whatsapp-fab:active {
+  transform: scale(1.02);
+}
+
+.whatsapp-fab svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: currentColor;
+}
+
+/* Pulse animation on load */
+@keyframes fab-pulse {
+  0%, 100% { box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 4px 24px rgba(37, 211, 102, 0.6); }
+}
+
+.whatsapp-fab {
+  animation: fab-pulse 2.5s ease-in-out 3;
+}
+
+.whatsapp-fab:hover {
+  animation: none;
+}
+
+/* --------------------------------------------------------------------------
+   CTA Banner
+   -------------------------------------------------------------------------- */
+.cta-banner {
+  background: linear-gradient(135deg, var(--color-azure) 0%, var(--color-azure-dark) 100%);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.cta-banner h2,
+.cta-banner h3 {
+  color: var(--color-white);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--color-charcoal);
+  color: #D5DBDF;
+}
+
+/* Footer links: #D5DBDF on #2C3E50 = 7.8:1 ratio - WCAG AAA */
+.site-footer a {
+  color: #D5DBDF;
+  transition: color var(--transition-base);
+}
+
+.site-footer a:hover {
+  color: var(--color-white);
+}
+
+.site-footer h4,
+.site-footer h5 {
+  color: var(--color-white);
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* --------------------------------------------------------------------------
+   Miscellaneous Utilities
+   -------------------------------------------------------------------------- */
+
+/* Subtle background patterns */
+.bg-sand-light {
+  background-color: var(--color-sand-light);
+}
+
+.bg-sand {
+  background-color: var(--color-sand);
+}
+
+/* Decorative accent line */
+.accent-line {
+  width: 3rem;
+  height: 3px;
+  background-color: var(--color-terracotta);
+  border-radius: 2px;
+}
+
+.accent-line-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image utilities */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Skip to content (accessibility) */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-azure);
+  color: var(--color-white);
+  border-radius: var(--radius-button);
+  font-weight: 600;
+  transition: top var(--transition-base);
+}
+
+.skip-link:focus {
+  top: 1rem;
+  color: var(--color-white);
+}
+
+/* Visually hidden (screen reader only) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .top-bar,
+  .whatsapp-fab,
+  .mobile-nav-overlay,
+  .cta-banner {
+    display: none !important;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}
