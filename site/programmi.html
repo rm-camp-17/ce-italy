@@ -256,10 +256,10 @@
     var visible = filtered.slice(0, visibleCount);
     grid.innerHTML = visible.map(function(p) {
       var catLabel = categoryLabels[p.category[0]] || p.category[0];
-      var imgSrc = categoryImages[p.category[0]] || defaultImage;
+      var imgSrc = (p.image && p.image !== 'placeholder') ? p.image : (categoryImages[p.category[0]] || defaultImage);
       return '<div class="program-card card card-bordered overflow-hidden cursor-pointer" data-id="' + p.id + '">' +
         '<div class="aspect-[16/10] relative overflow-hidden">' +
-          '<img src="' + imgSrc + '" alt="' + p.name + '" class="w-full h-48 object-cover">' +
+          '<img src="' + imgSrc + '" alt="' + p.name + '" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="800" height="500">' +
           '<span class="absolute top-3 left-3 bg-white/90 text-xs font-semibold px-2.5 py-1 rounded-full text-charcoal">' + catLabel + '</span>' +
         '</div>' +
         '<div class="p-5">' +
@@ -303,7 +303,9 @@
     var p = programs.find(function(x) { return x.id === id; });
     if (!p) return;
     var catLabel = categoryLabels[p.category[0]] || p.category[0];
+    var imgSrc = (p.image && p.image !== 'placeholder') ? p.image : null;
     document.getElementById('modal-content').innerHTML =
+      (imgSrc ? '<div class="mb-6 -mx-6 -mt-6 rounded-b-lg overflow-hidden"><img src="' + imgSrc + '" alt="' + p.name + '" class="w-full h-48 object-cover" loading="lazy"></div>' : '') +
       '<div class="mb-6">' +
         '<span class="text-xs font-semibold bg-azure/10 text-azure px-3 py-1 rounded-full">' + catLabel + '</span>' +
       '</div>' +
