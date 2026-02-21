@@ -182,17 +182,8 @@
       <div class="flex items-center justify-between h-16 md:h-20">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-2 group" aria-label="Camp Experts Italia - Torna alla home">
-          <div class="w-10 h-10 md:w-12 md:h-12 bg-azure rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-            <span class="text-white font-heading font-bold text-lg md:text-xl">CE</span>
-          </div>
-          <div class="flex flex-col leading-tight">
-            <span class="font-heading font-bold text-azure text-lg md:text-xl tracking-tight group-hover:text-azure-700 transition-colors duration-200">
-              Camp Experts
-            </span>
-            <span class="text-terracotta text-xs md:text-sm font-semibold tracking-wider uppercase">
-              Italia
-            </span>
-          </div>
+          <img src="/assets/images/camp-experts-logo.svg" alt="Camp Experts" class="h-10 md:h-12 w-auto">
+          <span class="text-terracotta text-xs md:text-sm font-semibold tracking-wider uppercase">Italia</span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -202,7 +193,7 @@
           <a href="/servizi.html" class="nav-link">Servizi</a>
           <a href="/programmi.html" class="nav-link">Programmi</a>
           <a href="/faq.html" class="nav-link active">FAQ</a>
-          <a href="/prenota.html" class="btn btn-primary btn-sm">Prenota</a>
+          <a href="/prenota.html" class="btn btn-primary btn-sm">Consulenza Gratuita</a>
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -260,11 +251,11 @@
           </svg>
           +33 6 18 45 59 97
         </a>
-        <a href="mailto:laura.toledo@libello.com" class="flex items-center gap-2 text-charcoal-400 hover:text-azure text-sm py-2 transition-colors duration-200">
+        <a href="mailto:lauratoledo@campexperts.com" class="flex items-center gap-2 text-charcoal-400 hover:text-azure text-sm py-2 transition-colors duration-200">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
           </svg>
-          laura.toledo@libello.com
+          lauratoledo@campexperts.com
         </a>
       </div>
     </div>
@@ -358,6 +349,19 @@
     <section class="section bg-white" aria-label="Domande frequenti">
       <div class="container-site">
         <div class="max-w-narrow mx-auto">
+
+          <!-- FAQ Item 0: Safety -->
+          <div class="border border-gray-200 rounded-card overflow-hidden">
+              <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-sand-50 transition-colors" aria-expanded="false">
+                  <span class="font-heading font-semibold text-charcoal pr-4">Come posso essere sicuro/a che mio figlio sar&agrave; al sicuro?</span>
+                  <svg class="w-5 h-5 text-azure flex-shrink-0 faq-icon transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+              </button>
+              <div class="faq-content hidden">
+                  <div class="p-5 pt-0 text-charcoal-400 leading-relaxed">
+                      <p>La sicurezza &egrave; la nostra priorit&agrave; assoluta. Ogni programma che raccomandiamo &egrave; stato verificato personalmente da Laura o dal team Camp Experts. Controlliamo protocolli di sicurezza, rapporto staff-ragazzi, certificazioni, assicurazioni e referenze. Inoltre, Laura resta il tuo punto di contatto per tutta la durata del programma, pronta a intervenire se necessario. Con oltre 25 anni di esperienza, Camp Experts ha la competenza per guidarti verso programmi sicuri e affidabili.</p>
+                  </div>
+              </div>
+          </div>
 
           <!-- FAQ Item 1 -->
           <details class="faq-item group border-b border-gray-200" id="faq-1">
@@ -574,13 +578,8 @@
         <!-- Column 1: Brand & Description -->
         <div class="sm:col-span-2 lg:col-span-1">
           <div class="flex items-center gap-2 mb-4">
-            <div class="w-10 h-10 bg-azure-light rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-              <span class="text-white font-heading font-bold text-lg">CE</span>
-            </div>
-            <div class="flex flex-col leading-tight">
-              <span class="font-heading font-bold text-white text-lg">Camp Experts</span>
-              <span class="text-terracotta-400 text-xs font-semibold tracking-wider uppercase">Italia</span>
-            </div>
+            <img src="/assets/images/camp-experts-logo.svg" alt="Camp Experts" class="h-8 w-auto brightness-0 invert">
+            <span class="text-terracotta-400 text-xs font-semibold tracking-wider uppercase">Italia</span>
           </div>
           <p class="text-sm leading-relaxed mb-4 text-charcoal-100">
             Consulenza personalizzata per summer camp e programmi educativi internazionali.
@@ -593,11 +592,11 @@
           <h4 class="text-base font-heading font-semibold mb-4">Contatti</h4>
           <ul class="space-y-3 text-sm">
             <li>
-              <a href="mailto:laura.toledo@libello.com" class="flex items-start gap-2 hover:text-white transition-colors duration-200">
+              <a href="mailto:lauratoledo@campexperts.com" class="flex items-start gap-2 hover:text-white transition-colors duration-200">
                 <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
                 </svg>
-                laura.toledo@libello.com
+                lauratoledo@campexperts.com
               </a>
             </li>
             <li>
