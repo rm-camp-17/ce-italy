@@ -3,508 +3,897 @@
     "id": 1,
     "name": "British Summer School",
     "slug": "british-summer-school",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programma estivo accademico in prestigiosi college britannici con corsi di inglese, materie STEM e attività culturali.",
     "fullDescription": "British Summer School offre ai ragazzi un'esperienza educativa immersiva in alcuni dei college più prestigiosi del Regno Unito. Il programma combina lezioni di inglese intensivo con corsi accademici a scelta tra scienze, business, arti e humanities. Gli studenti vivono nelle residenze storiche dei college, partecipano ad attività sportive e culturali nel pomeriggio, e godono di escursioni nel weekend verso le principali città britanniche. L'ambiente è internazionale con partecipanti da oltre 40 paesi, favorendo scambi culturali autentici e amicizie durature.",
     "expertReview": "Ho incontrato il team di British Summer School al nostro Expo e sono rimasta colpita dalla qualità del loro programma accademico. Le sedi nei college storici offrono un'esperienza britannica autentica. Ottimo per ragazzi che vogliono combinare studio dell'inglese con un assaggio della vita universitaria UK.",
-    "location": { "city": "Varie sedi", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 8, "max": 17 },
-    "duration": { "weeks": 2, "label": "2–6 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Varie sedi",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–6 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/british-summer-school.webp",
     "imageColor": "#1565C0"
   },
   {
     "id": 2,
     "name": "Haileybury International Summer School",
     "slug": "haileybury-summer-school",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Summer school internazionale presso Haileybury College nell'Hertfordshire con corsi accademici, sport e attività creative.",
     "fullDescription": "Haileybury International Summer School si svolge nel campus storico di Haileybury College, una delle scuole più rinomate d'Inghilterra fondata nel 1862. Il programma offre corsi mattutini di inglese o materie accademiche avanzate, seguiti da un ricco programma pomeridiano di sport (tennis, nuoto, calcio, cricket) e attività creative (teatro, arte, musica). Le serate sono animate da quiz, talent show, dischi e serate cinema. Il campus dispone di strutture sportive eccellenti, inclusa una piscina coperta e campi da gioco vastissimi.",
     "expertReview": "Haileybury è un college che emana storia e tradizione britannica. Durante il nostro Expo ho potuto approfondire il loro approccio didattico, che bilancia perfettamente rigore accademico e divertimento. Ideale per famiglie che cercano un ambiente strutturato ma stimolante in un contesto davvero prestigioso.",
-    "location": { "city": "Hertfordshire", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 9, "max": 16 },
-    "duration": { "weeks": 2, "label": "2–3 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Hertfordshire",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 9,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–3 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/haileybury-summer-school.webp",
     "imageColor": "#0D47A1"
   },
   {
     "id": 3,
     "name": "Les Elfes – Camp Estivo e Invernale a Verbier",
     "slug": "les-elfes-verbier",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp internazionale a Verbier, Svizzera, con sport alpini, attività outdoor e programma multilingue estate e inverno.",
     "fullDescription": "Les Elfes è un camp internazionale di riferimento situato nella splendida cornice alpina di Verbier, in Svizzera. Offre programmi sia estivi che invernali per ragazzi di tutto il mondo. D'estate il programma include escursioni in montagna, mountain bike, arrampicata, rafting, equitazione, e sport di squadra. D'inverno: sci, snowboard, ciaspolate e attività sulla neve. Ogni sessione include anche laboratori creativi, serate a tema e lezioni di lingua (inglese, francese o tedesco). Il camp accoglie oltre 40 nazionalità, creando un ambiente multiculturale unico.",
     "expertReview": "Les Elfes è un nome che conosco da anni e poterli incontrare al nostro Expo ha confermato la loro eccellenza. La posizione a Verbier è mozzafiato e il programma è tra i più completi disponibili. Particolarmente interessante la possibilità di frequentare sia in estate che in inverno. Perfetto per famiglie che cercano un ambiente internazionale di altissimo livello in Svizzera.",
-    "location": { "city": "Verbier", "country": "Svizzera", "flag": "🇨🇭" },
-    "ageRange": { "min": 6, "max": 17 },
-    "duration": { "weeks": 2, "label": "1–4 settimane" },
-    "language": ["Inglese", "Francese", "Tedesco"],
+    "location": {
+      "city": "Verbier",
+      "country": "Svizzera",
+      "flag": "🇨🇭"
+    },
+    "ageRange": {
+      "min": 6,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "1–4 settimane"
+    },
+    "language": [
+      "Inglese",
+      "Francese",
+      "Tedesco"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Tutto l'anno (estate e inverno)",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/les-elfes-verbier.webp",
     "imageColor": "#2E7D32"
   },
   {
     "id": 4,
     "name": "French Woods Sports and Arts Center",
     "slug": "french-woods-sports-arts",
-    "category": ["artistico"],
+    "category": [
+      "artistico"
+    ],
     "description": "Camp americano nello Stato di New York specializzato in arti performative, arti visive e sport con programma completamente personalizzabile.",
     "fullDescription": "French Woods Sports and Arts Center è un camp unico nel suo genere, situato tra le montagne Catskill nello Stato di New York. Ciò che lo distingue è il programma completamente personalizzabile: ogni campista crea il proprio orario giornaliero scegliendo tra oltre 40 attività nelle arti performative (teatro, danza, circo, magia, musica), arti visive (ceramica, pittura, scultura), e sport (tennis, equitazione, skateboard, mountain bike). Con tre spettacoli teatrali prodotti ogni sessione e un circo professionale, è il paradiso per giovani artisti.",
     "expertReview": "French Woods è uno di quei camp che devi vedere per capire. Al nostro Expo ho potuto apprezzare la passione del loro team e l'incredibile varietà dell'offerta. È perfetto per ragazzi creativi che non vogliono un camp tradizionale. Il programma personalizzabile è un punto di forza enorme — nessun altro camp offre questa flessibilità nelle arti e nello sport.",
-    "location": { "city": "Hancock, New York", "country": "USA", "flag": "🇺🇸" },
-    "ageRange": { "min": 7, "max": 17 },
-    "duration": { "weeks": 3, "label": "3–9 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Hancock, New York",
+      "country": "USA",
+      "flag": "🇺🇸"
+    },
+    "ageRange": {
+      "min": 7,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 3,
+      "label": "3–9 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/french-woods-sports-arts.webp",
     "imageColor": "#880E4F"
   },
   {
     "id": 5,
     "name": "Windsor Mountain Summer Camp",
     "slug": "windsor-mountain",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp tradizionale americano nel New Hampshire focalizzato su comunità, inclusione e avventure nella natura.",
     "fullDescription": "Windsor Mountain è un camp residenziale tradizionale americano situato sulle rive di un lago nel cuore del New Hampshire. Fondato con una forte missione di inclusione e community building, accoglie ragazzi da oltre 30 paesi. Il programma offre attività classiche da camp americano: canoa, kayak, vela, arrampicata, tiro con l'arco, arti manuali, teatro e sport di squadra. Ogni settimana include escursioni nella natura, notti in tenda e attività intorno al fuoco. L'atmosfera è calda e familiare, con un rapporto counselor-camper eccellente.",
     "expertReview": "Windsor Mountain incarna lo spirito autentico del camp americano. Al nostro Expo il loro direttore ha trasmesso una passione contagiosa per la missione educativa del camp. L'aspetto internazionale e inclusivo è un vero punto di forza. Consigliato per famiglie che cercano un'esperienza di camp genuina, lontana dal lusso ma ricchissima di valori e avventura.",
-    "location": { "city": "New Hampshire", "country": "USA", "flag": "🇺🇸" },
-    "ageRange": { "min": 7, "max": 16 },
-    "duration": { "weeks": 3, "label": "2–7 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "New Hampshire",
+      "country": "USA",
+      "flag": "🇺🇸"
+    },
+    "ageRange": {
+      "min": 7,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 3,
+      "label": "2–7 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/windsor-mountain.webp",
     "imageColor": "#388E3C"
   },
   {
     "id": 6,
     "name": "Summer Discovery & Oxford Summer Courses",
     "slug": "summer-discovery-oxford",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programmi accademici pre-universitari presso campus prestigiosi tra USA e UK, inclusa l'Università di Oxford.",
     "fullDescription": "Il Summer Discovery Group offre due programmi di eccellenza: Summer Discovery, con sedi nelle migliori università americane (UCLA, Georgetown, Michigan), e Oxford Summer Courses, che si svolge nei college storici dell'Università di Oxford. I programmi combinano corsi accademici intensivi — da business a medicina, da STEM a scienze umane — con attività culturali, sportive e sociali. Gli studenti vivono nei campus universitari, sperimentando la vita accademica in prima persona. I corsi sono tenuti da docenti universitari e professionisti del settore.",
     "expertReview": "Summer Discovery e Oxford Summer Courses rappresentano il top dei programmi accademici estivi. Al nostro Expo ho apprezzato la serietà e la profondità dell'offerta formativa. Per ragazzi motivati che pensano già al futuro universitario, questi programmi offrono un vantaggio reale. La possibilità di studiare a Oxford o in un campus Ivy League è un'esperienza che può cambiare la prospettiva di un giovane.",
-    "location": { "city": "Oxford / USA", "country": "UK / USA", "flag": "🇬🇧" },
-    "ageRange": { "min": 13, "max": 18 },
-    "duration": { "weeks": 2, "label": "2–4 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Oxford / USA",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 13,
+      "max": 18
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–4 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/summer-discovery-oxford.webp",
     "imageColor": "#4A148C"
   },
   {
     "id": 7,
     "name": "Country House Camps",
     "slug": "country-house-camps",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp britannici in dimore di campagna storiche con attività outdoor, sport e avventure nella natura inglese.",
     "fullDescription": "Country House Camps offre un'esperienza di camp unica in splendide dimore di campagna inglesi. I ragazzi partecipano ad attività outdoor come arrampicata, tiro con l'arco, orienteering, costruzione di rifugi, mountain bike e giochi di squadra nei vasti terreni delle proprietà storiche. Il programma include anche serate a tema, giochi notturni, barbecue e attività creative. L'atmosfera è rilassata e avventurosa, con un forte focus sulla socializzazione, il gioco all'aperto e lo sviluppo della fiducia in sé stessi.",
     "expertReview": "Country House Camps è il camp perfetto per chi cerca un'esperienza britannica autentica, lontana dalla città. Al nostro Expo ho trovato il team caloroso e appassionato. Le sedi nelle dimore di campagna danno un fascino speciale al tutto. Ideale per una prima esperienza di camp in UK, con un approccio avventuroso ma non estremo.",
-    "location": { "city": "Varie sedi", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 8, "max": 14 },
-    "duration": { "weeks": 1, "label": "1–2 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Varie sedi",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 14
+    },
+    "duration": {
+      "weeks": 1,
+      "label": "1–2 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/country-house-camps.webp",
     "imageColor": "#33691E"
   },
   {
     "id": 8,
     "name": "Camp Chateaugay",
     "slug": "camp-chateaugay",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp tradizionale americano nelle Adirondack Mountains con sport acquatici, avventura e spirito di comunità dal 1903.",
     "fullDescription": "Camp Chateaugay è uno storico camp americano fondato nel 1903, situato sulle rive del lago Chateaugay nelle Adirondack Mountains dello Stato di New York. Il programma offre un'ampia gamma di attività: vela, canoa, kayak, sci nautico, nuoto, tennis, tiro con l'arco, equitazione, arrampicata, arti manuali e teatro. La tradizione centenaria si riflette in rituali del camp, canzoni, serate intorno al fuoco e un forte senso di comunità. I campisti sviluppano autonomia, leadership e amicizie che durano una vita.",
     "expertReview": "Camp Chateaugay ha una storia incredibile — oltre 120 anni di eccellenza. Al nostro Expo ho percepito subito la profondità delle tradizioni e l'attenzione alla crescita personale dei ragazzi. Le Adirondack Mountains offrono un contesto naturale spettacolare. Consigliato per famiglie che cercano l'essenza del camp americano tradizionale, con valori solidi e un'esperienza trasformativa.",
-    "location": { "city": "Adirondack, New York", "country": "USA", "flag": "🇺🇸" },
-    "ageRange": { "min": 7, "max": 16 },
-    "duration": { "weeks": 4, "label": "4–7 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Adirondack, New York",
+      "country": "USA",
+      "flag": "🇺🇸"
+    },
+    "ageRange": {
+      "min": 7,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 4,
+      "label": "4–7 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/camp-chateaugay.webp",
     "imageColor": "#1B5E20"
   },
   {
     "id": 9,
     "name": "InvestIN",
     "slug": "investin",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Esperienze professionali immersive a Londra per giovani: medicina, legge, ingegneria, business e oltre 20 settori.",
     "fullDescription": "InvestIN offre programmi unici che permettono ai ragazzi di vivere esperienze professionali immersive in oltre 20 settori di carriera, da medicina a legge, da ingegneria a finanza, da politica internazionale a medicina forense. Le attività si svolgono a Londra in sedi professionali reali — studi legali, laboratori medici, sale operatorie simulate, trading floor — con professionisti che guidano workshop pratici. Gli studenti ricevono un certificato e una lettera di raccomandazione, utili per le application universitarie.",
     "expertReview": "InvestIN è un programma davvero innovativo. Al nostro Expo mi ha colpito il loro approccio pratico all'orientamento professionale. Non è il classico programma accademico: qui i ragazzi vivono la professione, non la studiano soltanto. Perfetto per adolescenti che stanno pensando al loro futuro e vogliono esplorare diverse carriere prima di scegliere il percorso universitario.",
-    "location": { "city": "Londra", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 12, "max": 18 },
-    "duration": { "weeks": 1, "label": "1–2 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Londra",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 12,
+      "max": 18
+    },
+    "duration": {
+      "weeks": 1,
+      "label": "1–2 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Tutto l'anno (sessioni durante vacanze scolastiche)",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/investin.webp",
     "imageColor": "#263238"
   },
   {
     "id": 10,
     "name": "Summer Boarding Courses",
     "slug": "summer-boarding-courses",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Corsi estivi in boarding school d'élite britanniche con programmi accademici, inglese e attività extracurricolari.",
     "fullDescription": "Summer Boarding Courses organizza programmi estivi nelle più prestigiose boarding school del Regno Unito, incluse sedi a Oxford, Cambridge, Londra e nella campagna inglese. Il programma combina lezioni mattutine di inglese o materie accademiche (scienze, business, diritto, medicina) con un ricco programma pomeridiano di sport, arti creative e visite culturali. Ogni boarding school offre strutture eccellenti e un'atmosfera educativa stimolante. Gli studenti vivono l'esperienza autentica della vita in una boarding school britannica.",
     "expertReview": "Summer Boarding Courses è un operatore affidabile che conosco bene. Al nostro Expo ho apprezzato la varietà delle sedi e dei programmi offerti. La possibilità di scegliere tra diverse boarding school permette di trovare l'ambiente giusto per ogni ragazzo. Consigliato per chi vuole un'esperienza educativa britannica classica con la sicurezza di un programma ben organizzato.",
-    "location": { "city": "Varie sedi", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 8, "max": 17 },
-    "duration": { "weeks": 2, "label": "2–6 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Varie sedi",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–6 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/summer-boarding-courses.webp",
     "imageColor": "#1A237E"
   },
   {
     "id": 11,
     "name": "Bede's Summer School",
     "slug": "bedes-summer-school",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programma estivo nel Sussex con inglese intensivo, attività sportive e creative in un campus con strutture eccellenti.",
     "fullDescription": "Bede's Summer School si svolge nei campus di Bede's School nel Sussex, una delle zone più belle del sud dell'Inghilterra. Il programma offre corsi intensivi di inglese combinati con un'ampia scelta di attività pomeridiane: sport (tennis, nuoto, calcio, equitazione), arti creative (teatro, arte, musica) e escursioni culturali a Londra, Brighton e nei castelli del Sussex. Le strutture del campus sono moderne e ben attrezzate, con piscina coperta, palestre e campi sportivi. L'atmosfera è accogliente e internazionale.",
     "expertReview": "Bede's è un nome consolidato nel panorama delle summer school britanniche. Al nostro Expo ho trovato il team professionale e attento ai dettagli. Il campus nel Sussex è splendido e le strutture sportive sono di alto livello. Ottima scelta per famiglie che cercano un programma ben strutturato con un buon equilibrio tra studio dell'inglese e attività ricreative.",
-    "location": { "city": "Sussex", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 6, "max": 17 },
-    "duration": { "weeks": 2, "label": "1–6 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Sussex",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 6,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "1–6 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/bedes-summer-school.webp",
     "imageColor": "#00838F"
   },
   {
     "id": 12,
     "name": "Camp Weequahic",
     "slug": "camp-weequahic",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp tradizionale americano in Pennsylvania con sport, arti, attività acquatiche e una comunità affiatata.",
     "fullDescription": "Camp Weequahic è un camp residenziale tradizionale americano situato sui Pocono Mountains in Pennsylvania, sulle rive di un lago privato. Fondato nel 1953, offre un programma completo di attività: nuoto, canoa, vela, sci nautico, tennis, basket, calcio, arrampicata, arti manuali, teatro, danza e musica. I campisti sono organizzati in gruppi per età e alloggiano in cabine con counselor dedicati. Ogni sessione include serate speciali, talent show, olimpiadi del camp e la tradizionale Color War.",
     "expertReview": "Camp Weequahic ha un'energia contagiosa. Al nostro Expo ho potuto parlare con il direttore e ho capito perché generazioni di famiglie continuano a sceglierlo. Il mix di sport, creatività e spirito di comunità è perfettamente bilanciato. I Pocono Mountains offrono un contesto naturale ideale. Consigliato per ragazzi che cercano il classico camp americano con un'atmosfera familiare e accogliente.",
-    "location": { "city": "Pennsylvania", "country": "USA", "flag": "🇺🇸" },
-    "ageRange": { "min": 7, "max": 16 },
-    "duration": { "weeks": 3, "label": "2–7 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Pennsylvania",
+      "country": "USA",
+      "flag": "🇺🇸"
+    },
+    "ageRange": {
+      "min": 7,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 3,
+      "label": "2–7 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/camp-weequahic.webp",
     "imageColor": "#E65100"
   },
   {
     "id": 13,
     "name": "Reach Cambridge",
     "slug": "reach-cambridge",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programma accademico estivo a Cambridge con corsi tenuti da docenti universitari in un college storico.",
     "fullDescription": "Reach Cambridge offre un programma accademico estivo di alto livello che si svolge nei college storici dell'Università di Cambridge. Gli studenti scelgono corsi in ambiti che vanno da medicina a diritto, da scienze a letteratura, tenuti da docenti e ricercatori dell'università. Il programma include anche attività sociali, sport, punting sul fiume Cam, escursioni a Londra e serate culturali. Gli studenti dormono nelle residenze dei college, vivendo un'esperienza universitaria autentica. Classi piccole garantiscono un'attenzione personalizzata.",
     "expertReview": "Reach Cambridge offre un'esperienza accademica che pochi programmi possono eguagliare. Al nostro Expo ho discusso a lungo con il loro team sulla qualità dell'insegnamento e sono rimasta impressionata. Studiare nei college di Cambridge, con docenti universitari, è un'opportunità straordinaria. Consigliato per studenti motivati che sognano un percorso accademico di alto livello.",
-    "location": { "city": "Cambridge", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 14, "max": 18 },
-    "duration": { "weeks": 2, "label": "2 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Cambridge",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 14,
+      "max": 18
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/reach-cambridge.webp",
     "imageColor": "#B71C1C"
   },
   {
     "id": 14,
     "name": "Academy Camps",
     "slug": "academy-camps",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Day camp e camp residenziali in UK con attività outdoor, sport, giochi e avventure per ragazzi di tutte le età.",
     "fullDescription": "Academy Camps organizza camp diurni e residenziali in diverse sedi nel Regno Unito. Il programma è orientato al divertimento e alla socializzazione con un mix di sport, giochi di squadra, attività creative, avventure outdoor e sfide di gruppo. I camp si svolgono in campus scolastici con buone strutture sportive e spazi verdi. L'approccio è informale e giocoso, con counselor energici e preparati. Le attività spaziano dal calcio al teatro, dall'arrampicata alla cucina, garantendo varietà per tutti i gusti e le inclinazioni.",
     "expertReview": "Academy Camps è un'opzione eccellente per famiglie che cercano un camp in UK accessibile e ben organizzato. Al nostro Expo ho apprezzato il loro approccio inclusivo e il focus sul divertimento. Perfetto per una prima esperienza di camp, con la flessibilità di scegliere tra day camp e residenziale. Ottimo rapporto qualità-prezzo.",
-    "location": { "city": "Varie sedi", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 7, "max": 16 },
-    "duration": { "weeks": 1, "label": "1–2 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Varie sedi",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 7,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 1,
+      "label": "1–2 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€",
     "accommodation": "Day camp / Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/academy-camps.webp",
     "imageColor": "#FF6F00"
   },
   {
     "id": 15,
     "name": "Independent Lake Camp",
     "slug": "independent-lake-camp",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp americano in Pennsylvania con programma personalizzabile, sport acquatici, arti e attività avventurose.",
     "fullDescription": "Independent Lake Camp è un camp residenziale nel nord-est della Pennsylvania, sulle rive di un lago privato di 10 ettari. Ciò che lo distingue è la filosofia dell'indipendenza: i campisti scelgono le proprie attività, creando un'esperienza personalizzata. Il programma include wakeboard, sci nautico, kayak, vela, arrampicata, skateboard, mountain bike, arti visive, musica, teatro, videomaking e molto altro. Il camp ha investito in strutture eccellenti: skatepark, studio di registrazione, campo da paintball e zipline. L'atmosfera è rilassata e creativa.",
     "expertReview": "Independent Lake Camp è un camp che piace moltissimo ai ragazzi proprio per la libertà di scelta. Al nostro Expo ho avuto modo di vedere i loro video e le strutture sono davvero impressionanti. Il lago privato e le attività acquatiche sono un punto di forza. Perfetto per ragazzi indipendenti che vogliono decidere come trascorrere le proprie giornate. Un camp moderno con un'anima autentica.",
-    "location": { "city": "Pennsylvania", "country": "USA", "flag": "🇺🇸" },
-    "ageRange": { "min": 7, "max": 17 },
-    "duration": { "weeks": 3, "label": "2–7 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Pennsylvania",
+      "country": "USA",
+      "flag": "🇺🇸"
+    },
+    "ageRange": {
+      "min": 7,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 3,
+      "label": "2–7 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/independent-lake-camp.webp",
     "imageColor": "#00695C"
   },
   {
     "id": 16,
     "name": "Taunton Summer School",
     "slug": "taunton-summer-school",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Summer school nel Somerset con inglese intensivo, attività sportive e culturali nel verde della campagna inglese.",
     "fullDescription": "Taunton Summer School si svolge nel campus di Taunton School, nel cuore del Somerset. Il programma offre corsi di inglese intensivo (15-21 ore settimanali) per tutti i livelli, dalle classi principianti agli avanzati, con certificazione finale. Le lezioni sono dinamiche e interattive, focalizzate sulla comunicazione. I pomeriggi offrono sport (tennis, nuoto, calcio, cricket, equitazione), attività creative e escursioni nel Somerset e verso Bath, Bristol e Exeter. La scuola dispone di strutture moderne inclusa una piscina coperta, campi sportivi e un teatro.",
     "expertReview": "Taunton è una summer school solida e ben organizzata. Al nostro Expo ho parlato con il team e sono rimasta colpita dalla cura dedicata all'insegnamento dell'inglese. Il Somerset è una regione bellissima e meno turistica del solito, il che favorisce un'immersione linguistica più autentica. Consigliato per ragazzi che hanno come obiettivo principale il miglioramento dell'inglese, con il bonus di attività e sport di qualità.",
-    "location": { "city": "Somerset", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 8, "max": 17 },
-    "duration": { "weeks": 2, "label": "2–6 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Somerset",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–6 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/taunton-summer-school.webp",
     "imageColor": "#4E342E"
   },
   {
     "id": 17,
     "name": "Exsportise Summer School",
     "slug": "exsportise-summer-school",
-    "category": ["sportivo"],
+    "category": [
+      "sportivo"
+    ],
     "description": "Summer school sportiva in UK con coaching professionale in tennis, calcio, golf, equitazione e altri sport d'élite.",
     "fullDescription": "Exsportise è la summer school sportiva leader nel Regno Unito, che combina coaching sportivo professionale con lezioni di inglese. Gli studenti scelgono uno sport principale — tennis, calcio, golf, hockey, basket, equitazione, danza — e ricevono coaching intensivo da allenatori qualificati e spesso ex professionisti. Le mattine sono dedicate allo sport scelto (3 ore), seguite da lezioni di inglese e attività ricreative nel pomeriggio. Le sedi sono campus scolastici con strutture sportive eccellenti nel sud dell'Inghilterra.",
     "expertReview": "Exsportise è il programma che consiglio a tutte le famiglie con ragazzi sportivi che vogliono anche migliorare l'inglese. Al nostro Expo ho potuto verificare la qualità del coaching, che è davvero professionale. La formula sport + inglese funziona perfettamente: i ragazzi sono motivati dall'attività sportiva e l'inglese viene assorbito naturalmente. Eccellente rapporto qualità-prezzo.",
-    "location": { "city": "Sussex / Surrey", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 9, "max": 16 },
-    "duration": { "weeks": 1, "label": "1–4 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Sussex / Surrey",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 9,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 1,
+      "label": "1–4 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/exsportise-summer-school.webp",
     "imageColor": "#AD1457"
   },
   {
     "id": 18,
     "name": "Sevenoaks School Holiday Programmes",
     "slug": "sevenoaks-holiday-programmes",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programmi estivi presso Sevenoaks School nel Kent con accademici, sport e attività nel campus di una delle migliori scuole IB al mondo.",
     "fullDescription": "Sevenoaks School, una delle scuole IB più prestigiose al mondo, apre il suo campus durante le vacanze estive per programmi dedicati a studenti internazionali. Il programma combina sessioni accademiche stimolanti — critical thinking, debate, STEM, arti — con sport e attività creative. Il campus è magnifico, con strutture moderne immerse nel verde del Kent, a soli 30 minuti da Londra. Gli studenti beneficiano dell'eccellenza accademica di Sevenoaks in un contesto più rilassato e orientato all'esplorazione.",
     "expertReview": "Sevenoaks è una scuola che non ha bisogno di presentazioni — è ai vertici mondiali per il diploma IB. Al nostro Expo ho scoperto i loro programmi estivi e ne sono rimasta entusiasta. Per famiglie che considerano una boarding school britannica per il futuro, questo è il modo perfetto per testare l'ambiente. Anche per chi vuole semplicemente un'esperienza estiva d'élite, Sevenoaks non delude.",
-    "location": { "city": "Kent", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 9, "max": 17 },
-    "duration": { "weeks": 2, "label": "1–3 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Kent",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 9,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "1–3 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/sevenoaks-holiday-programmes.webp",
     "imageColor": "#311B92"
   },
   {
     "id": 19,
     "name": "Moorland Hall Summer Camp",
     "slug": "moorland-hall-summer-camp",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp avventuroso nel Devon con attività outdoor, equitazione, sport acquatici e esplorazione della brughiera inglese.",
     "fullDescription": "Moorland Hall Summer Camp è situato nel magnifico paesaggio del Devon, ai margini del Dartmoor National Park. Il camp offre un programma ricco di avventure outdoor: equitazione, coasteering, surf, kayak, arrampicata, tiro con l'arco, bushcraft e escursioni nella brughiera. Le attività sono guidate da istruttori qualificati e certificate. Il camp si svolge in una proprietà storica con ampi terreni e strutture confortevoli. L'atmosfera è avventurosa e familiare, con un forte focus sulla connessione con la natura e lo sviluppo della resilienza.",
     "expertReview": "Moorland Hall è perfetto per ragazzi che amano stare all'aperto e vivere avventure. Al nostro Expo ho apprezzato l'enfasi sulle attività outdoor autentiche — non è un camp patinato, è un camp vero, nella natura. Il Devon e Dartmoor sono spettacolari. Consigliato per famiglie che cercano un'alternativa ai camp tradizionali, con un forte elemento di avventura e scoperta.",
-    "location": { "city": "Devon", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 8, "max": 16 },
-    "duration": { "weeks": 1, "label": "1–2 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Devon",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 1,
+      "label": "1–2 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/moorland-hall-summer-camp.webp",
     "imageColor": "#5D4037"
   },
   {
     "id": 20,
     "name": "Immerse Education",
     "slug": "immerse-education",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programmi accademici immersivi a Oxford, Cambridge e Londra con corsi universitari per studenti ambiziosi.",
     "fullDescription": "Immerse Education offre programmi accademici residenziali di alta qualità nei college dell'Università di Oxford, Cambridge e a Londra. Gli studenti scelgono tra oltre 40 materie — da medicina a ingegneria, da economia a filosofia, da psicologia a intelligenza artificiale — e seguono corsi intensivi tenuti da tutor universitari. Il programma include anche workshop, seminari, visite culturali e attività sociali. Vivere e studiare in un college di Oxbridge è un'esperienza trasformativa che arricchisce il curriculum e prepara alle application universitarie.",
     "expertReview": "Immerse Education è tra i programmi accademici più completi che conosco. Al nostro Expo ho apprezzato la profondità dell'offerta formativa — oltre 40 materie è impressionante. Per studenti che puntano a università di alto livello, partecipare a un programma Immerse a Oxford o Cambridge dimostra motivazione e capacità. Il personal statement ne beneficerà enormemente.",
-    "location": { "city": "Oxford / Cambridge / Londra", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 13, "max": 18 },
-    "duration": { "weeks": 2, "label": "1–2 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Oxford / Cambridge / Londra",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 13,
+      "max": 18
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "1–2 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/immerse-education.webp",
     "imageColor": "#0D47A1"
   },
   {
     "id": 21,
     "name": "Sportech Academy",
     "slug": "sportech-academy",
-    "category": ["sportivo"],
+    "category": [
+      "sportivo"
+    ],
     "description": "Accademia sportiva svizzera con programmi intensivi di tennis, sci, golf e multisport in un contesto alpino.",
     "fullDescription": "Sportech Academy è un'accademia sportiva d'élite situata in Svizzera che offre programmi estivi e invernali di alto livello. I ragazzi possono scegliere tra percorsi intensivi di tennis, sci alpino, golf e multisport, con coaching professionale e analisi tecnica avanzata. Le sessioni mattutine sono dedicate allo sport scelto, mentre i pomeriggi offrono attività complementari e tempo libero. Le strutture sono all'avanguardia e il contesto alpino svizzero garantisce un ambiente salubre e stimolante. Il programma è disponibile sia in estate che in inverno.",
     "expertReview": "Sportech è un'eccellenza svizzera nello sport giovanile. Al nostro Expo ho potuto apprezzare la professionalità del loro approccio al coaching sportivo. La Svizzera offre un contesto sicuro e di altissima qualità. Consigliato per ragazzi con ambizioni sportive che vogliono allenarsi in un ambiente professionale con la comodità di restare in Europa.",
-    "location": { "city": "Svizzera", "country": "Svizzera", "flag": "🇨🇭" },
-    "ageRange": { "min": 8, "max": 17 },
-    "duration": { "weeks": 1, "label": "1–4 settimane" },
-    "language": ["Inglese", "Francese"],
+    "location": {
+      "city": "Svizzera",
+      "country": "Svizzera",
+      "flag": "🇨🇭"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 1,
+      "label": "1–4 settimane"
+    },
+    "language": [
+      "Inglese",
+      "Francese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Tutto l'anno",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/sportech-academy.webp",
     "imageColor": "#E53935"
   },
   {
     "id": 22,
     "name": "Village Camps",
     "slug": "village-camps",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp internazionali in Svizzera con programmi outdoor, lingue e attività avventurose in diverse località alpine.",
     "fullDescription": "Village Camps è uno degli operatori più consolidati nel mondo dei camp internazionali, con oltre 50 anni di esperienza e sedi in Svizzera e Austria. I programmi combinano avventure outdoor (escursioni, rafting, arrampicata, mountain bike) con corsi di lingua (inglese, francese) e attività creative. Le sedi svizzere, tra le Alpi, offrono panorami spettacolari e un ambiente sicuro. Il camp accoglie ragazzi da oltre 60 paesi, creando un'atmosfera veramente internazionale. Programmi specifici includono anche leadership, STEM e performing arts.",
     "expertReview": "Village Camps è un pilastro nel settore dei camp internazionali — 50 anni di storia parlano chiaro. Al nostro Expo ho potuto aggiornarmi sui loro programmi più recenti. La varietà delle sedi e dei programmi permette di trovare la formula giusta per ogni ragazzo. L'aspetto multiculturale è eccezionale con 60+ nazionalità rappresentate. Perfetto per famiglie che vogliono un camp in Svizzera con un'organizzazione collaudata.",
-    "location": { "city": "Leysin / Varie sedi", "country": "Svizzera", "flag": "🇨🇭" },
-    "ageRange": { "min": 7, "max": 17 },
-    "duration": { "weeks": 2, "label": "1–3 settimane" },
-    "language": ["Inglese", "Francese"],
+    "location": {
+      "city": "Leysin / Varie sedi",
+      "country": "Svizzera",
+      "flag": "🇨🇭"
+    },
+    "ageRange": {
+      "min": 7,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "1–3 settimane"
+    },
+    "language": [
+      "Inglese",
+      "Francese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Giugno – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/village-camps.webp",
     "imageColor": "#2E7D32"
   },
   {
     "id": 23,
     "name": "Brillantmont International School",
     "slug": "brillantmont-international-school",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programma estivo multilingue a Losanna con studio delle lingue, attività alpine e ambiente internazionale familiare.",
     "fullDescription": "Brillantmont International School a Losanna propone un programma estivo che combina studio delle lingue (francese, inglese o tedesco) con un ricco calendario di attività sportive e culturali. Le mattine sono dedicate a lezioni di lingua in piccoli gruppi (max 12 studenti), mentre i pomeriggi offrono sport acquatici sul Lago Lemano, escursioni nelle Alpi svizzere, visite a città come Ginevra e Montreux. La scuola, fondata nel 1882, offre un ambiente familiare e sicuro nel cuore della Svizzera francese. L'atmosfera è intima grazie al numero ridotto di partecipanti.",
     "expertReview": "Brillantmont è una scuola con una storia straordinaria — fondata nel 1882, è ancora gestita dalla stessa famiglia. Al nostro Expo ho ritrovato il loro team con cui collaboro da tempo. Il programma estivo mantiene lo spirito familiare della scuola. Ideale per famiglie che cercano un ambiente raccolto e protetto in Svizzera, con un'eccellente offerta linguistica. I progressi nel francese o nell'inglese sono visibili già dopo due settimane.",
-    "location": { "city": "Losanna", "country": "Svizzera", "flag": "🇨🇭" },
-    "ageRange": { "min": 10, "max": 17 },
-    "duration": { "weeks": 2, "label": "2–4 settimane" },
-    "language": ["Inglese", "Francese", "Tedesco"],
+    "location": {
+      "city": "Losanna",
+      "country": "Svizzera",
+      "flag": "🇨🇭"
+    },
+    "ageRange": {
+      "min": 10,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–4 settimane"
+    },
+    "language": [
+      "Inglese",
+      "Francese",
+      "Tedesco"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/brillantmont-international-school.webp",
     "imageColor": "#C62828"
   },
   {
     "id": 24,
     "name": "Earlscliffe",
     "slug": "earlscliffe",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Boarding school e programma estivo a Folkestone con vista sulla Manica, corsi accademici e preparazione universitaria.",
     "fullDescription": "Earlscliffe è una boarding school internazionale situata a Folkestone, con vista spettacolare sulla Manica. Il programma estivo offre corsi accademici intensivi per studenti internazionali, combinando lezioni di inglese, materie STEM, business e humanities con attività sportive e culturali. La scuola è rinomata per la preparazione alle università britanniche di alto livello. Durante l'estate, gli studenti beneficiano di classi ridotte, tutor dedicati e un programma di escursioni che include Londra, Canterbury e la campagna del Kent.",
     "expertReview": "Earlscliffe è una boarding school che produce risultati accademici eccezionali. Al nostro Expo ho parlato con il team educativo e ho apprezzato il loro approccio personalizzato. La posizione a Folkestone è unica — la vista sulla Manica è spettacolare. Per famiglie che considerano una boarding school per l'anno scolastico, il programma estivo è il modo ideale per testare l'ambiente e la qualità dell'insegnamento.",
-    "location": { "city": "Folkestone", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 13, "max": 17 },
-    "duration": { "weeks": 2, "label": "2–4 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Folkestone",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 13,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–4 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/earlscliffe.webp",
     "imageColor": "#37474F"
   },
   {
     "id": 25,
     "name": "Chantemerle",
     "slug": "chantemerle",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Scuola internazionale svizzera con programma estivo di lingue, sport alpini e attività culturali a Blonay.",
     "fullDescription": "Chantemerle è una scuola internazionale svizzera situata a Blonay, con vista panoramica sul Lago Lemano e le Alpi. Il programma estivo offre corsi intensivi di francese, inglese o tedesco al mattino, combinati con un programma ricco di attività pomeridiane: sport (tennis, nuoto, equitazione, vela), escursioni in montagna, visite culturali a Losanna, Montreux e Ginevra, e serate animate. L'ambiente è familiare e protetto, con un numero ridotto di partecipanti che garantisce attenzione individuale. La scuola vanta una lunga tradizione di accoglienza internazionale.",
     "expertReview": "Chantemerle è una perla nascosta della Svizzera francese. Al nostro Expo ho riscoperto la loro offerta e sono rimasta colpita dall'ambiente familiare — qui ogni ragazzo è conosciuto per nome. La posizione sopra il Lago Lemano è da cartolina. Perfetto per famiglie che cercano un programma linguistico in Svizzera in un contesto intimo e sicuro, lontano dai grandi numeri.",
-    "location": { "city": "Blonay", "country": "Svizzera", "flag": "🇨🇭" },
-    "ageRange": { "min": 6, "max": 16 },
-    "duration": { "weeks": 2, "label": "2–4 settimane" },
-    "language": ["Francese", "Inglese", "Tedesco"],
+    "location": {
+      "city": "Blonay",
+      "country": "Svizzera",
+      "flag": "🇨🇭"
+    },
+    "ageRange": {
+      "min": 6,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–4 settimane"
+    },
+    "language": [
+      "Francese",
+      "Inglese",
+      "Tedesco"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/chantemerle.webp",
     "imageColor": "#1B5E20"
   },
   {
     "id": 26,
     "name": "Westonbirt School – Wishford Education",
     "slug": "westonbirt-wishford",
-    "category": ["educativo"],
+    "category": [
+      "educativo"
+    ],
     "description": "Programma estivo nella storica Westonbirt School nel Gloucestershire con inglese, sport e attività nella campagna inglese.",
     "fullDescription": "Westonbirt School, parte del gruppo Wishford Education, offre un programma estivo immerso nella splendida campagna del Gloucestershire, vicino ai Cotswolds. Il campus storico, circondato da 210 acri di parco con un celebre arboretum, offre un ambiente unico per l'apprendimento. Il programma combina lezioni di inglese con attività sportive (equitazione, tennis, nuoto, tiro con l'arco), creative (arte, teatro, musica) e avventurose (orienteering, bushcraft). Escursioni settimanali includono Bath, Bristol, Oxford e i villaggi dei Cotswolds.",
     "expertReview": "Westonbirt è un luogo magico — il campus con l'arboretum è semplicemente unico. Al nostro Expo ho incontrato il team di Wishford Education e ho apprezzato la loro visione educativa. Il Gloucestershire e i Cotswolds offrono un'Inghilterra da cartolina. Consigliato per famiglie che cercano un'esperienza nella campagna inglese autentica, combinando studio dell'inglese con attività nella natura.",
-    "location": { "city": "Gloucestershire", "country": "UK", "flag": "🇬🇧" },
-    "ageRange": { "min": 8, "max": 16 },
-    "duration": { "weeks": 2, "label": "1–3 settimane" },
-    "language": ["Inglese"],
+    "location": {
+      "city": "Gloucestershire",
+      "country": "UK",
+      "flag": "🇬🇧"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 16
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "1–3 settimane"
+    },
+    "language": [
+      "Inglese"
+    ],
     "priceRange": "€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/westonbirt-wishford.webp",
     "imageColor": "#558B2F"
   },
   {
     "id": 27,
     "name": "CERAN Academy",
     "slug": "ceran-academy",
-    "category": ["corso-inglese"],
+    "category": [
+      "corso-inglese"
+    ],
     "description": "Accademia linguistica intensiva in Belgio con immersione totale in inglese, francese, olandese o tedesco.",
     "fullDescription": "CERAN Academy è un'accademia linguistica d'eccellenza situata a Spa, in Belgio, rinomata per il suo metodo di immersione linguistica totale. Gli studenti scelgono la lingua target — inglese, francese, olandese o tedesco — e vivono una full immersion: lezioni al mattino, attività nel pomeriggio e momenti sociali la sera, tutto nella lingua scelta. Il metodo CERAN è riconosciuto a livello internazionale per la sua efficacia. Le classi sono piccole (max 9 studenti) e gli insegnanti sono madrelingua altamente qualificati. Le strutture a Spa sono moderne e confortevoli.",
     "expertReview": "CERAN è il punto di riferimento europeo per l'apprendimento linguistico intensivo. Al nostro Expo ho potuto vedere i risultati del loro metodo — i progressi sono straordinari grazie all'immersione totale. Spa in Belgio è facilmente raggiungibile dall'Italia. Consigliato per ragazzi che hanno bisogno di un salto di qualità significativo in una lingua, o per famiglie che cercano un approccio serio e strutturato all'apprendimento linguistico.",
-    "location": { "city": "Spa", "country": "Belgio", "flag": "🇧🇪" },
-    "ageRange": { "min": 9, "max": 18 },
-    "duration": { "weeks": 1, "label": "1–4 settimane" },
-    "language": ["Inglese", "Francese", "Olandese", "Tedesco"],
+    "location": {
+      "city": "Spa",
+      "country": "Belgio",
+      "flag": "🇧🇪"
+    },
+    "ageRange": {
+      "min": 9,
+      "max": 18
+    },
+    "duration": {
+      "weeks": 1,
+      "label": "1–4 settimane"
+    },
+    "language": [
+      "Inglese",
+      "Francese",
+      "Olandese",
+      "Tedesco"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Tutto l'anno (sessioni durante vacanze scolastiche)",
@@ -516,38 +905,69 @@
     "id": 28,
     "name": "La Garenne – Summer Camp",
     "slug": "la-garenne-summer-camp",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp estivo di lusso a Villars-sur-Ollon con attività alpine, lingue e programma multisport in un ambiente esclusivo.",
     "fullDescription": "La Garenne è una prestigiosa scuola internazionale svizzera che offre un camp estivo esclusivo a Villars-sur-Ollon, nelle Alpi Vodesi. Il programma combina corsi di lingua (francese o inglese) con un ricco programma di attività alpine e multisport: escursioni in montagna, arrampicata, mountain bike, nuoto, tennis, equitazione, e sport acquatici sul lago. Le strutture sono lussuose, con chalet accoglienti e cucina di alto livello. Il camp è piccolo e selettivo, garantendo un'attenzione personalizzata e un ambiente familiare e sicuro.",
     "expertReview": "La Garenne è sinonimo di eccellenza svizzera. Al nostro Expo ho potuto confermare l'altissima qualità che conoscevo già. Villars-sur-Ollon è un villaggio alpino incantevole e sicuro. Il camp è piccolo, il che significa che ogni bambino riceve un'attenzione straordinaria. Consigliato per famiglie che cercano il meglio in Svizzera, in un ambiente raffinato ma caldo e accogliente. Particolarmente adatto ai più piccoli grazie all'atmosfera protetta.",
-    "location": { "city": "Villars-sur-Ollon", "country": "Svizzera", "flag": "🇨🇭" },
-    "ageRange": { "min": 5, "max": 14 },
-    "duration": { "weeks": 2, "label": "2–4 settimane" },
-    "language": ["Francese", "Inglese"],
+    "location": {
+      "city": "Villars-sur-Ollon",
+      "country": "Svizzera",
+      "flag": "🇨🇭"
+    },
+    "ageRange": {
+      "min": 5,
+      "max": 14
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–4 settimane"
+    },
+    "language": [
+      "Francese",
+      "Inglese"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/la-garenne-summer-camp.webp",
     "imageColor": "#6A1B9A"
   },
   {
     "id": 29,
     "name": "International Summer Camp Montana",
     "slug": "summer-camp-montana",
-    "category": ["camp-estivo"],
+    "category": [
+      "camp-estivo"
+    ],
     "description": "Camp internazionale a Crans-Montana con sport, lingue, attività alpine e un ambiente multiculturale da oltre 60 anni.",
     "fullDescription": "International Summer Camp Montana è un camp storico fondato oltre 60 anni fa nella rinomata stazione alpina di Crans-Montana, in Svizzera. Il programma offre un mix perfetto di sport (tennis, golf, nuoto, equitazione, mountain bike, arrampicata), attività creative (arte, musica, teatro) e corsi di lingua (francese, inglese, tedesco). Le escursioni nelle Alpi svizzere, incluso il ghiacciaio della Plaine Morte, sono tra i momenti più memorabili. Il camp accoglie ragazzi da oltre 40 paesi in un'atmosfera calda e internazionale. Le strutture sono confortevoli e il personale è multilingue.",
     "expertReview": "International Summer Camp Montana è un'istituzione nel mondo dei camp svizzeri. Al nostro Expo ho ritrovato un team che conosco da anni — la loro costanza nella qualità è ammirevole. Crans-Montana è una delle più belle località alpine svizzere e il programma sfrutta al massimo il territorio. Perfetto per famiglie che cercano un camp classico svizzero con un forte elemento internazionale e la possibilità di praticare più lingue.",
-    "location": { "city": "Crans-Montana", "country": "Svizzera", "flag": "🇨🇭" },
-    "ageRange": { "min": 8, "max": 17 },
-    "duration": { "weeks": 2, "label": "2–4 settimane" },
-    "language": ["Francese", "Inglese", "Tedesco"],
+    "location": {
+      "city": "Crans-Montana",
+      "country": "Svizzera",
+      "flag": "🇨🇭"
+    },
+    "ageRange": {
+      "min": 8,
+      "max": 17
+    },
+    "duration": {
+      "weeks": 2,
+      "label": "2–4 settimane"
+    },
+    "language": [
+      "Francese",
+      "Inglese",
+      "Tedesco"
+    ],
     "priceRange": "€€€",
     "accommodation": "Residenziale",
     "dates": "Luglio – Agosto 2026",
     "website": "#",
-    "image": "placeholder",
+    "image": "/assets/images/programs/summer-camp-montana.webp",
     "imageColor": "#D84315"
   }
 ]
