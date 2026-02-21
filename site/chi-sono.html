@@ -29,7 +29,7 @@
     "name": "Laura Agosti Toledo",
     "jobTitle": "Camp Expert per Italia e Monaco",
     "worksFor": {"@type": "Organization", "name": "Camp Experts"},
-    "email": ["laura.toledo@libello.com", "lauratoledo@campexperts.com"],
+    "email": "lauratoledo@campexperts.com",
     "telephone": "+33618455997",
     "areaServed": ["Italy", "Monaco"],
     "knowsLanguage": ["Italian", "English"]
@@ -55,8 +55,8 @@
   <div class="container-site">
     <div class="flex items-center justify-between h-16 md:h-20">
       <a href="/" class="flex items-center gap-2 group">
-        <div class="w-10 h-10 md:w-12 md:h-12 bg-azure rounded-lg flex items-center justify-center"><span class="text-white font-heading font-bold text-lg md:text-xl">CE</span></div>
-        <div class="flex flex-col leading-tight"><span class="font-heading font-bold text-azure text-lg md:text-xl tracking-tight group-hover:text-azure-700 transition-colors">Camp Experts</span><span class="text-terracotta text-xs md:text-sm font-semibold tracking-wider uppercase">Italia</span></div>
+        <img src="/assets/images/camp-experts-logo.svg" alt="Camp Experts" class="h-10 md:h-12 w-auto">
+        <div class="flex flex-col leading-tight"><span class="text-terracotta text-xs md:text-sm font-semibold tracking-wider uppercase">Italia</span></div>
       </a>
       <nav class="hidden lg:flex items-center gap-8">
         <a href="/" class="nav-link">Home</a>
@@ -64,7 +64,7 @@
         <a href="/servizi.html" class="nav-link">Servizi</a>
         <a href="/programmi.html" class="nav-link">Programmi</a>
         <a href="/faq.html" class="nav-link">FAQ</a>
-        <a href="/prenota.html" class="btn btn-primary btn-sm">Prenota</a>
+        <a href="/prenota.html" class="btn btn-primary btn-sm">Consulenza Gratuita</a>
       </nav>
       <button type="button" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-charcoal hover:bg-sand-100 transition-colors" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Apri menu">
         <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
@@ -90,14 +90,28 @@
   <section class="bg-gradient-to-br from-azure-800 via-azure to-azure-700 text-white py-16 md:py-24">
     <div class="container-site">
       <div class="flex flex-col md:flex-row items-center gap-10">
-        <!-- Headshot placeholder -->
-        <div class="w-48 h-48 md:w-72 md:h-72 rounded-full bg-sand-300 flex items-center justify-center flex-shrink-0 border-4 border-white/30 shadow-xl">
-          <span class="text-azure-700 text-sm font-semibold text-center px-4">Foto di Laura<br>(300&times;300)</span>
+        <!-- Headshot -->
+        <div class="w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden flex-shrink-0 border-4 border-white/30 shadow-xl">
+            <img src="/assets/images/laura-toledo-headshot.svg" alt="Laura Agosti Toledo" class="w-full h-full object-cover">
         </div>
         <div>
           <h1 class="font-heading text-3xl md:text-5xl text-white mb-4 text-balance">Laura Agosti Toledo</h1>
           <p class="text-xl text-azure-200 mb-2">Camp Expert, Italia &amp; Monaco</p>
           <p class="text-lg text-azure-100 leading-relaxed max-w-xl">Nata in Italia, basata a Monaco. La tua guida esperta per camp estivi e programmi internazionali.</p>
+          <div class="flex flex-wrap gap-3 mt-4">
+              <span class="inline-flex items-center gap-1.5 bg-white/15 text-white text-sm font-medium px-3 py-1 rounded-full">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Camp Experts &mdash; 25+ anni
+              </span>
+              <span class="inline-flex items-center gap-1.5 bg-white/15 text-white text-sm font-medium px-3 py-1 rounded-full">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Organizzatrice Monaco Expo
+              </span>
+              <span class="inline-flex items-center gap-1.5 bg-white/15 text-white text-sm font-medium px-3 py-1 rounded-full">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Partner ISM
+              </span>
+          </div>
         </div>
       </div>
     </div>
@@ -119,6 +133,17 @@
             <p class="text-charcoal leading-relaxed italic">
               Laura &egrave; italiana di origine, vive a Monaco con il marito (anche lui italiano), e questo le d&agrave; una marcia in più nel comprendere cultura familiare, lingua e aspettative degli utenti italiani.
             </p>
+          </div>
+          <div class="mt-8 bg-azure/5 rounded-card p-6 border-l-4 border-azure">
+              <div class="flex gap-0.5 mb-2">
+                  <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-charcoal italic leading-relaxed">&ldquo;Laura ci ha guidato passo dopo passo &mdash; professionale, disponibile, e soprattutto competente.&rdquo;</p>
+              <p class="text-sm text-charcoal-400 mt-2 font-medium">Francesca M., Milano</p>
           </div>
         </div>
       </div>
@@ -143,10 +168,10 @@
         </div>
         <!-- Gallery placeholders -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="aspect-video bg-azure-100 rounded-lg flex items-center justify-center text-azure-400 text-xs font-semibold">Foto Expo 1</div>
-          <div class="aspect-video bg-azure-100 rounded-lg flex items-center justify-center text-azure-400 text-xs font-semibold">Foto Expo 2</div>
-          <div class="aspect-video bg-azure-100 rounded-lg flex items-center justify-center text-azure-400 text-xs font-semibold">Foto Expo 3</div>
-          <div class="aspect-video bg-azure-100 rounded-lg flex items-center justify-center text-azure-400 text-xs font-semibold">Foto Expo 4</div>
+            <div class="aspect-video rounded-lg overflow-hidden"><img src="/assets/images/full-summer.webp" alt="Monaco Camp Expo" class="w-full h-full object-cover"></div>
+            <div class="aspect-video rounded-lg overflow-hidden"><img src="/assets/images/children-7-12.webp" alt="Camp Expo famiglie" class="w-full h-full object-cover"></div>
+            <div class="aspect-video rounded-lg overflow-hidden"><img src="/assets/images/teen-summers.jpg" alt="Camp Expo programmi" class="w-full h-full object-cover"></div>
+            <div class="aspect-video rounded-lg overflow-hidden"><img src="/assets/images/school-experts.jpg" alt="Camp Expo educazione" class="w-full h-full object-cover"></div>
         </div>
       </div>
     </div>
@@ -237,11 +262,7 @@
       <div class="max-w-xl mx-auto text-center">
         <h2 class="font-heading text-h2 text-azure mb-6">Contatta Laura</h2>
         <div class="space-y-4">
-          <a href="mailto:laura.toledo@libello.com" class="flex items-center justify-center gap-3 text-azure hover:text-terracotta transition-colors text-lg">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-            laura.toledo@libello.com
-          </a>
-          <a href="mailto:lauratoledo@campexperts.com" class="flex items-center justify-center gap-3 text-azure hover:text-terracotta transition-colors">
+          <a href="mailto:lauratoledo@campexperts.com" class="flex items-center justify-center gap-3 text-azure hover:text-terracotta transition-colors text-lg">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
             lauratoledo@campexperts.com
           </a>
@@ -262,11 +283,11 @@
   <section class="cta-banner section">
     <div class="container-site">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="font-heading text-h2 md:text-display text-white mb-4">Prenota la tua consulenza con Laura</h2>
+        <h2 class="font-heading text-h2 md:text-display text-white mb-4">L&rsquo;estate di tuo figlio inizia con una chiamata</h2>
         <p class="text-body-lg text-azure-200 mb-8">Scopri il programma perfetto per tuo figlio. Consulenza personalizzata in italiano.</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/prenota.html" class="btn btn-lg bg-white text-azure hover:bg-sand-100 border-white font-semibold shadow-lg">Prenota Ora</a>
-          <a href="mailto:laura.toledo@libello.com" class="btn btn-lg border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/60">Scrivici un&rsquo;Email</a>
+          <a href="/prenota.html" class="btn btn-lg bg-white text-azure hover:bg-sand-100 border-white font-semibold shadow-lg">Prenota Ora - Posti Limitati</a>
+          <a href="mailto:lauratoledo@campexperts.com" class="btn btn-lg border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/60">Scrivici un&rsquo;Email</a>
         </div>
       </div>
     </div>
@@ -278,14 +299,20 @@
 <footer class="site-footer" role="contentinfo">
   <div class="container-site section">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-      <div class="sm:col-span-2 lg:col-span-1"><div class="flex items-center gap-2 mb-4"><div class="w-10 h-10 bg-azure-light rounded-lg flex items-center justify-center"><span class="text-white font-heading font-bold text-lg">CE</span></div><div class="flex flex-col leading-tight"><span class="font-heading font-bold text-white text-lg">Camp Experts</span><span class="text-terracotta-400 text-xs font-semibold tracking-wider uppercase">Italia</span></div></div><p class="text-sm leading-relaxed text-charcoal-100">Consulenza personalizzata per summer camp e programmi educativi internazionali.</p></div>
-      <div><h4 class="text-base font-heading font-semibold text-white mb-4">Contatti</h4><ul class="space-y-3 text-sm"><li><a href="mailto:laura.toledo@libello.com" class="hover:text-white transition-colors">laura.toledo@libello.com</a></li><li><a href="tel:+33618455997" class="hover:text-white transition-colors">+33 6 18 45 59 97</a></li><li><a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp</a></li></ul></div>
+      <div class="sm:col-span-2 lg:col-span-1"><div class="flex items-center gap-2 mb-4"><img src="/assets/images/camp-experts-logo.svg" alt="Camp Experts" class="h-8 w-auto brightness-0 invert"><div class="flex flex-col leading-tight"><span class="text-terracotta-400 text-xs font-semibold tracking-wider uppercase">Italia</span></div></div><p class="text-sm leading-relaxed text-charcoal-100">Consulenza personalizzata per summer camp e programmi educativi internazionali.</p></div>
+      <div><h4 class="text-base font-heading font-semibold text-white mb-4">Contatti</h4><ul class="space-y-3 text-sm"><li><a href="mailto:lauratoledo@campexperts.com" class="hover:text-white transition-colors">lauratoledo@campexperts.com</a></li><li><a href="tel:+33618455997" class="hover:text-white transition-colors">+33 6 18 45 59 97</a></li><li><a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp</a></li></ul></div>
       <div><h4 class="text-base font-heading font-semibold text-white mb-4">Territori</h4><ul class="space-y-2.5 text-sm"><li>Monaco</li><li>Venezia / Nord Italia</li><li>Roma / Sud Italia</li><li>Ovest / Monaco</li></ul></div>
       <div><h4 class="text-base font-heading font-semibold text-white mb-4">Link Rapidi</h4><ul class="space-y-2.5 text-sm"><li><a href="/" class="hover:text-white transition-colors">Home</a></li><li><a href="/chi-sono.html" class="hover:text-white transition-colors">Chi &egrave; Laura</a></li><li><a href="/servizi.html" class="hover:text-white transition-colors">Servizi</a></li><li><a href="/programmi.html" class="hover:text-white transition-colors">Programmi</a></li><li><a href="/prenota.html" class="hover:text-white transition-colors">Prenota</a></li></ul></div>
     </div>
   </div>
   <div class="border-t footer-divider"><div class="container-site py-6"><div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-charcoal-200"><p>&copy; 2026 Camp Experts Italia. Tutti i diritti riservati.</p><nav class="flex items-center gap-4"><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a><span class="text-charcoal-600">|</span><a href="/cookie.html" class="hover:text-white transition-colors">Cookie Policy</a></nav></div></div></div>
 </footer>
+
+<!-- Sticky Mobile CTA -->
+<div class="sticky-cta" id="sticky-cta">
+  <a href="/prenota.html" class="btn btn-primary flex-1 text-center text-sm py-2.5">Prenota Ora</a>
+  <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="btn btn-outline flex-1 text-center text-sm py-2.5">WhatsApp</a>
+</div>
 
 <!-- WhatsApp FAB -->
 <a href="https://wa.me/33618455997" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Contattaci su WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
@@ -299,6 +326,16 @@
   menuBtn.addEventListener('click', function() { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
   closeBtn.addEventListener('click', closeMenu); backdrop.addEventListener('click', closeMenu);
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+})();
+// Sticky CTA
+(function() {
+  var cta = document.getElementById('sticky-cta');
+  if (!cta) return;
+  var shown = false;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300 && !shown) { cta.classList.add('is-visible'); document.body.classList.add('sticky-cta-visible'); shown = true; }
+    else if (window.scrollY <= 300 && shown) { cta.classList.remove('is-visible'); document.body.classList.remove('sticky-cta-visible'); shown = false; }
+  });
 })();
 </script>
 
