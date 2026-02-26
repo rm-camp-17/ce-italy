@@ -1,2 +1,8 @@
 [build]
   publish = "site"
+
+# Redirect old About page URL to new one
+[[redirects]]
+  from = "/chi-sono.html"
+  to = "/chi-siamo.html"
+  status = 301
